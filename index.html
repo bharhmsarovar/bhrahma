@@ -7,13 +7,20 @@
 <meta name="description" content="Home stay with five guest rooms and a cafe in Choti Basti, Pushkar, Rajasthan. See the rooms and enquire on WhatsApp.">
 <meta name="theme-color" content="#F8F3E9">
 <meta name="robots" content="index,follow,max-image-preview:large">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+<meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://res.cloudinary.com; connect-src 'self' https://res.cloudinary.com; frame-src https://www.google.com; form-action 'none'">
 <meta property="og:type" content="website"><meta property="og:site_name" content="Brahma Sarovar Home Stay and Cafe">
 <meta property="og:title" content="Brahma Sarovar Home Stay &amp; Cafe | Pushkar, Rajasthan">
 <meta property="og:description" content="Home stay with five guest rooms and a rooftop cafe in Choti Basti, Pushkar. See the rooms and enquire on WhatsApp.">
 <meta property="og:locale" content="en_IN"><meta property="og:image" content="https://res.cloudinary.com/qnri5unc/image/upload/f_jpg,q_auto,c_fill,g_auto,w_1200,h_630/v1793103643/1793048826814.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://res.cloudinary.com/qnri5unc/image/upload/f_jpg,q_auto,c_fill,g_auto,w_1200,h_630/v1793103643/1793048826814.jpg">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2214%22 fill=%22%23A94A28%22/%3E%3Ctext x=%2232%22 y=%2245%22 text-anchor=%22middle%22 font-size=%2238%22 font-family=%22Georgia,serif%22 fill=%22%23fff%22%3EB%3C/text%3E%3C/svg%3E" type="image/svg+xml">
+<link rel="canonical" href="https://bharhmsarovar.github.io/bhrahma/">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Jost:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Jost:wght@400;500;600&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Jost:wght@400;500;600&display=swap"></noscript>
 <style>
 /* Brahma Sarovar Home Stay and Cafe: design system (shared by every page) */
 :root{
@@ -21,7 +28,7 @@
  --ivory:#F8F3E9;--sand:#EFE5D2;--sand-deep:#DCCBAA;--surface:#FFFDF8;
  --forest:#2B3A2E;--forest-deep:#1D2820;--olive:#5E6A43;
  --terra:#A5513A;--terra-dark:#843F2B;--brass:#B38A45;
- --ink:#2A2A24;--muted:#686353;--line:#DDD0B8;--line-soft:#E8DEC9;
+ --ink:#2A2A24;--muted:#5A5345;--line:#DDD0B8;--line-soft:#E8DEC9;
  /* legacy names kept so older rules and pages keep working */
  --bg:var(--ivory);--primary:var(--terra);--primary-dark:var(--terra-dark);--accent:var(--brass);--lake:var(--forest);
  /* type */
@@ -85,6 +92,7 @@ ul{margin:0;padding:0;list-style:none}
 .site-nav a:not(.btn){display:block;padding:14px 4px;color:var(--ink);text-decoration:none;font:500 .82rem/1 var(--body);letter-spacing:.14em;text-transform:uppercase;position:relative}
 .site-nav a:not(.btn)::after{content:"";position:absolute;left:4px;right:4px;bottom:6px;height:1px;background:var(--terra);transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
 .site-nav a:not(.btn):hover,.site-nav a[aria-current=page]{color:var(--terra)}
+.nav-hub-link{color:var(--terra)!important;font-weight:600!important}
 .site-nav a:not(.btn):hover::after,.site-nav a[aria-current=page]::after{transform:scaleX(1)}
 @media(max-width:1099px){
  .js .site-nav{display:block;position:absolute;left:0;right:0;top:100%;background:var(--ivory);padding:8px 20px 20px;box-shadow:var(--shadow-lg);border-top:1px solid var(--line);visibility:hidden;opacity:0;transform:translateY(-10px);pointer-events:none;transition:opacity .3s,transform .3s var(--ease),visibility 0s .3s;max-height:calc(100vh - var(--header-h));overflow-y:auto}
@@ -118,6 +126,9 @@ ul{margin:0;padding:0;list-style:none}
 .hero h1{max-width:13ch;color:#fff;font-size:clamp(2.7rem,9vw,5.6rem);font-weight:500;line-height:1.02;text-wrap:balance}
 .hero-sub{font-size:clamp(1.1rem,2.4vw,1.4rem);max-width:34ch;color:#F1E6D3;margin-top:var(--s2)}
 .hero-chips{display:flex;flex-wrap:wrap;gap:8px 0;margin:0 0 var(--s3);font:500 .74rem/1 var(--body);letter-spacing:.2em;text-transform:uppercase;color:#EBC9A6}
+.hero-ota{display:flex;flex-wrap:wrap;gap:4px 0;margin:var(--s2) 0 var(--s1);font:500 .72rem/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:rgba(235,201,166,.7)}
+.hero-ota li{padding:0 12px;border-left:1px solid rgba(235,201,166,.35)}.hero-ota li:first-child{padding-left:0;border:0}
+.hero-ota a{color:rgba(235,201,166,.82);text-decoration:none;transition:color .2s}.hero-ota a:hover{color:#fff}
 .hero-chips li{padding:0 16px;border-left:1px solid rgba(235,201,166,.5)}.hero-chips li:first-child{padding-left:0;border:0}
 .hero .g-counter{margin-top:var(--s2);color:#F1E6D3;font-size:.95rem}
 .hero .btn-primary{border-color:var(--terra)}
@@ -237,11 +248,11 @@ h2+.faq{border-top:1px solid var(--line)}
 .site-footer a{color:#F1E6D3;display:inline-block;padding:5px 0;text-decoration:none;border-bottom:1px solid transparent}.site-footer a:hover{color:#fff;border-color:var(--brass)}
 .site-footer .ph{color:#EBC9A6;border-color:rgba(235,201,166,.6)}
 .footer-grid{display:grid;gap:var(--s4);grid-template-columns:1fr}
-@media(min-width:800px){.footer-grid{grid-template-columns:1.6fr 1fr 1fr;gap:var(--s6)}}
+@media(min-width:800px){.footer-grid{grid-template-columns:1.6fr 1fr 1fr 1fr;gap:var(--s4)}}
 .footer-name{font:500 2rem/1.1 var(--head);color:#fff;margin-bottom:var(--s2)}
 .footer-grid ul{display:grid;gap:2px;align-content:start}
 .footer-grid nav::before{content:"Explore";display:block;font:500 .7rem/1 var(--body);letter-spacing:.22em;text-transform:uppercase;color:var(--brass);margin-bottom:var(--s2)}
-.footer-grid>ul::before{content:"Find us online";display:block;font:500 .7rem/1 var(--body);letter-spacing:.22em;text-transform:uppercase;color:var(--brass);margin-bottom:var(--s2)}
+.footer-col-label{font:500 .7rem/1 var(--body);letter-spacing:.22em;text-transform:uppercase;color:var(--brass);margin-bottom:var(--s2);display:block}
 .footer-base{border-top:1px solid rgba(214,207,191,.18);margin-top:var(--s4);padding-top:var(--s3);font-size:.85rem;color:#A9A391}
 
 /* mobile action bar */
@@ -476,6 +487,26 @@ table.compare tbody tr:last-child>*{border-bottom:0}
 /* inline WhatsApp / Call text links */
 a[data-whatsapp]:not(.btn),a[data-call]:not(.btn){display:inline-block;font-weight:500;transition:transform .25s var(--ease),color .2s,letter-spacing .3s var(--ease)}
 a[data-whatsapp]:not(.btn):hover,a[data-call]:not(.btn):hover{transform:translateY(-2px);letter-spacing:.03em}
+
+/* 11b. host card + also find us on (OTA buttons) */
+.host-card{background:var(--forest);color:#F1E6D3;border-radius:var(--radius);padding:var(--s4);box-shadow:var(--shadow-lg)}
+@media(min-width:700px){.host-card{padding:var(--s6)}}
+.host-card .eyebrow{color:var(--brass)}
+.host-card-inner{display:flex;flex-direction:column;gap:var(--s3);align-items:flex-start}
+@media(min-width:600px){.host-card-inner{flex-direction:row;align-items:center;gap:var(--s4)}}
+.host-avatar{flex:0 0 auto;width:76px;height:76px;border-radius:50%;background:var(--brass);color:#fff;display:flex;align-items:center;justify-content:center;font:500 2rem/1 var(--head)}
+.host-name{color:#fff;font-size:1.5rem}
+.host-bio{color:#E8DEC9;max-width:56ch;margin-bottom:var(--s3)}
+.host-btns{display:flex;flex-wrap:wrap;align-items:center;gap:var(--s2) var(--s3);margin:0}
+.host-btns .btn-primary{background:var(--brass);border-color:var(--brass)}
+.host-btns .btn-primary:hover{background:#9c7638;border-color:#9c7638}
+.host-ig-link{color:#F1E6D3;font:500 .82rem/1.2 var(--body);letter-spacing:.1em;text-transform:uppercase;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px;transition:color .2s}
+.host-ig-link:hover{color:#fff}
+.ota-block{margin-top:var(--s6)}
+.ota-list{display:flex;flex-wrap:wrap;gap:12px}
+.ota-btn{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:10px 18px 10px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);font:500 .86rem/1.2 var(--body);text-decoration:none;box-shadow:var(--shadow);transition:transform .25s var(--ease),box-shadow .25s,border-color .25s,color .25s}
+.ota-btn:hover{transform:translateY(-2px);border-color:var(--terra);box-shadow:var(--shadow-lg);color:var(--ink)}
+.ota-logo{flex:0 0 auto;width:22px;height:22px}
 </style>
 <script>document.documentElement.classList.add('js');</script>
 <script type="application/ld+json">
@@ -524,6 +555,7 @@ a[data-whatsapp]:not(.btn):hover,a[data-call]:not(.btn):hover{transform:translat
         <li><a href="#pushkar-fair-2026">Pushkar Fair 2026</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="https://bharhmsarovar.github.io/bhrahma/pushkar-guide.html" target="_blank" rel="noopener noreferrer" class="nav-hub-link">Pushkar Hub</a></li>
         <li><a href="https://www.google.com/maps/search/?api=1&amp;query=26.4891199,74.5600403" data-link="maps" target="_blank" rel="noopener noreferrer">Google Maps</a></li>
       </ul>
       <a class="btn btn-primary nav-cta" href="#enquiry" data-whatsapp data-track="whatsapp_click">Enquire on WhatsApp</a>
@@ -553,11 +585,17 @@ a[data-whatsapp]:not(.btn):hover,a[data-call]:not(.btn):hover{transform:translat
     <p class="hero-sub">Five rooms and a cafe in Choti Basti, Pushkar.</p>
     <div class="btn-row">
       <a class="btn btn-primary" href="#enquiry" data-whatsapp data-track="whatsapp_click">Enquire on WhatsApp</a>
-      <a class="btn btn-secondary btn-on-dark" href="https://www.booking.com/hotel/in/brahma-sarovar-home-stay-and-cafe-pushkar.en-gb.html" target="_blank" rel="noopener noreferrer" data-track="booking_click">Book on Booking.com</a>
+      <a class="btn btn-secondary btn-on-dark" href="https://www.booking.com/hotel/in/brahma-sarovar-home-stay-and-cafe-pushkar.html" target="_blank" rel="noopener noreferrer" data-track="booking_click">Book on Booking.com</a>
     </div>
-    <div class="g-counter" data-google-counter role="img" aria-label="Rated 4.8 out of 5 from 5 Google reviews">
+    <ul class="hero-ota" aria-label="Also available on">
+      <li><a href="https://www.agoda.com/en-au/brahma-sarovar-home-stay-and-cafe-h98816980/hotel/all/pushkar-in.html" target="_blank" rel="noopener noreferrer" data-track="agoda_click">Agoda</a></li>
+      <li><a href="https://www.airbnb.co.in/rooms/1806528421689457205" target="_blank" rel="noopener noreferrer" data-track="airbnb_click">Airbnb</a></li>
+      <li><a href="https://share.google/idkGtI2yAbIVGE6lY" target="_blank" rel="noopener noreferrer" data-track="google_review_click">Google</a></li>
+      <li><a href="https://www.instagram.com/brahmasarovarpushkar" target="_blank" rel="noopener noreferrer" data-track="instagram_click">Instagram</a></li>
+    </ul>
+    <div class="g-counter" data-google-counter role="img" aria-label="Rated 4.8 out of 5 on Google">
       <span class="stars" style="--fill:96%" aria-hidden="true">★★★★★</span>
-      <span class="g-text"><strong><span data-count-rating>4.8</span> on Google</strong> · <span data-count-num>5</span> reviews</span>
+      <span class="g-text"><strong><span data-count-rating>4.8</span> on Google</strong></span>
     </div>
   </div>
 </section>
@@ -695,7 +733,7 @@ a[data-whatsapp]:not(.btn):hover,a[data-call]:not(.btn):hover{transform:translat
     <h2 id="near-home" class="title-rule">Famous places near us</h2>
     <p class="section-intro">Pushkar's lake, ghats and temples are close to our stay in Choti Basti.</p>
     <div class="near-grid">
-      <div class="near-col rv"><h3>Lake, ghats and temples</h3><ul><li><span>Mahadeva Ghat, Pushkar Lake</span><span class="near-d">400 m</span></li><li><span>Brahma Temple</span><span class="near-d">≈ 1 km</span></li><li><span>Varaha Temple</span><span class="near-d">≈ 1 km</span></li><li><span>Gurudwara</span><span class="near-d">300 m</span></li><li><span>Shri Rama Vaikunth Nath (Naya Rang Ji) Temple, Pushkar<br><span lang="hi">श्री रमा वैकुण्ठ नाथ मंदिर, पुष्कर</span></span><span class="near-d">400 m</span></li><li><span>Pushkar Ghat</span><span class="near-d">800 m</span></li></ul><p class="near-more">Also in Pushkar: Savitri Mata Temple, Gayatri Temple. Ask us for directions.</p></div>
+      <div class="near-col rv"><h3>Lake, ghats and temples</h3><ul><li><span>Mahadeva Ghat, Pushkar Lake</span><span class="near-d">400 m</span></li><li><span>Brahma Temple</span><span class="near-d">≈ 1 km</span></li><li><span>Varaha Temple</span><span class="near-d">≈ 1 km</span></li><li><span>Gurudwara</span><span class="near-d">300 m</span></li><li><span>Shri Rama Vaikunth Nath (Naya Rang Ji) Temple, Pushkar</span><span class="near-d">400 m</span></li><li><span>Pushkar Ghat</span><span class="near-d">800 m</span></li></ul><p class="near-more">Also in Pushkar: Savitri Mata Temple, Gayatri Temple. Ask us for directions.</p></div>
       <div class="near-col rv" style="--d:100ms"><h3>Parks and sights</h3><ul><li><span>Pandit Din Dayal Upadhyay Udyan</span><span class="near-d">200 m</span></li><li><span>Peace Park</span><span class="near-d">850 m</span></li><li><span>Pushkar Mela Ground</span><span class="near-d">1.3 km</span></li><li><span>Pushkar Fort</span><span class="near-d">3.3 km</span></li><li><span>Anasagar Lake, Ajmer</span><span class="near-d">9.5 km</span></li></ul></div>
       <div class="near-col rv" style="--d:200ms"><h3>Getting here</h3><ul><li><span>Pushkar railway station</span><span class="near-d">2.7 km</span></li><li><span>Ajmer Junction</span><span class="near-d">13 km</span></li><li><span>Kishangarh Airport</span><span class="near-d">35 km</span></li></ul></div>
     </div>
@@ -763,9 +801,9 @@ a[data-whatsapp]:not(.btn):hover,a[data-call]:not(.btn):hover{transform:translat
 <section class="section" id="reviews" aria-labelledby="rev-title">
   <div class="container">
     <h2 id="rev-title" class="title-rule">Rated on Google</h2>
-    <div class="g-counter g-counter-lg" data-google-counter role="img" aria-label="Rated 4.8 out of 5 from 5 Google reviews">
+    <div class="g-counter g-counter-lg" data-google-counter role="img" aria-label="Rated 4.8 out of 5 on Google">
       <span class="stars" style="--fill:96%" aria-hidden="true">★★★★★</span>
-      <span class="g-text"><strong><span data-count-rating>4.8</span> on Google</strong> · <span data-count-num>5</span> reviews</span>
+      <span class="g-text"><strong><span data-count-rating>4.8</span> on Google</strong></span>
     </div>
     <p class="rating-note" data-rating-note>Google rating as of 26 October 2026.</p>
     <div class="review-row" data-reviews hidden></div>
@@ -829,6 +867,78 @@ a[data-whatsapp]:not(.btn):hover,a[data-call]:not(.btn):hover{transform:translat
   </div>
 </section>
 
+<!-- 11b. Host card + Also find us on -->
+<section class="section" aria-label="Book and connect" id="book-connect">
+  <div class="container">
+
+    <!-- Meet your host -->
+    <div class="host-card rv">
+      <div class="host-card-inner">
+        <div class="host-avatar" aria-hidden="true">M</div>
+        <div>
+          <span class="eyebrow" style="margin-bottom:6px">Your host on Airbnb</span>
+          <h2 class="host-name">Meet your host — Manish</h2>
+          <p class="host-bio">Manish hosts Brahma Sarovar on Airbnb. The public profile shows hosting since 2026, a 100% response rate and replies within an hour.</p>
+          <div class="host-btns">
+            <a class="btn btn-primary" href="https://www.airbnb.co.in/users/profile/1796548461989334406" target="_blank" rel="noopener noreferrer">View Airbnb host profile</a>
+            <a class="host-ig-link" href="https://www.instagram.com/manishsenofficial" target="_blank" rel="noopener noreferrer">Host on Instagram</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Also find us on -->
+    <div class="ota-block rv" style="--d:80ms">
+      <span class="eyebrow" style="margin-bottom:var(--s3)">Also find us on</span>
+      <ul class="ota-list" aria-label="Booking platforms">
+        <li>
+          <a class="ota-btn" href="https://www.airbnb.co.in/rooms/1806528421689457205" target="_blank" rel="noopener noreferrer" data-track="airbnb_click">
+            <svg class="ota-logo" viewBox="0 0 32 32" aria-hidden="true" fill="none"><path d="M16 3C9 3 3 9 3 16s6 13 13 13 13-6 13-13S23 3 16 3z" fill="#FF5A5F" opacity=".12"/><path d="M16 7c-1.6 2.4-4 5.5-4 7.5a4 4 0 0 0 8 0C20 12.5 17.6 9.4 16 7zM9.5 16c0-1 .3-2.1 1-3.3-.8 1-1.5 2.4-1.5 3.8 0 2.8 2 5.2 4.8 5.8C11.2 21.3 9.5 18.9 9.5 16zm4.8 6.3c.5.1 1.1.2 1.7.2s1.2-.1 1.7-.2c1.2 2-1.7 3.5-3.4 0zm7.2-6.3c0 2.9-1.7 5.3-4.3 6.3 2.8-.6 4.8-3 4.8-5.8 0-1.4-.7-2.8-1.5-3.8.7 1.2 1 2.3 1 3.3z" fill="#FF5A5F"/></svg>
+            Airbnb: listing 1
+          </a>
+        </li>
+        <li>
+          <a class="ota-btn" href="https://www.airbnb.co.in/rooms/1806457183813295729" target="_blank" rel="noopener noreferrer" data-track="airbnb2_click">
+            <svg class="ota-logo" viewBox="0 0 32 32" aria-hidden="true" fill="none"><path d="M16 3C9 3 3 9 3 16s6 13 13 13 13-6 13-13S23 3 16 3z" fill="#FF5A5F" opacity=".12"/><path d="M16 7c-1.6 2.4-4 5.5-4 7.5a4 4 0 0 0 8 0C20 12.5 17.6 9.4 16 7zM9.5 16c0-1 .3-2.1 1-3.3-.8 1-1.5 2.4-1.5 3.8 0 2.8 2 5.2 4.8 5.8C11.2 21.3 9.5 18.9 9.5 16zm4.8 6.3c.5.1 1.1.2 1.7.2s1.2-.1 1.7-.2c1.2 2-1.7 3.5-3.4 0zm7.2-6.3c0 2.9-1.7 5.3-4.3 6.3 2.8-.6 4.8-3 4.8-5.8 0-1.4-.7-2.8-1.5-3.8.7 1.2 1 2.3 1 3.3z" fill="#FF5A5F"/></svg>
+            Airbnb: Deluxe Double Room
+          </a>
+        </li>
+        <li>
+          <a class="ota-btn" href="https://www.agoda.com/en-au/brahma-sarovar-home-stay-and-cafe-h98816980/hotel/all/pushkar-in.html" target="_blank" rel="noopener noreferrer" data-track="agoda_click">
+            <svg class="ota-logo" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="4" fill="#5392FF" opacity=".1"/><text x="16" y="21" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#5392FF">agoda</text></svg>
+            Agoda
+          </a>
+        </li>
+        <li>
+          <a class="ota-btn" href="https://www.booking.com/hotel/in/brahma-sarovar-home-stay-and-cafe-pushkar.html" target="_blank" rel="noopener noreferrer" data-track="booking_click">
+            <svg class="ota-logo" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="4" fill="#003580" opacity=".08"/><text x="16" y="21" text-anchor="middle" font-family="Arial,sans-serif" font-size="8.5" font-weight="700" fill="#003580">Booking.com</text></svg>
+            Booking.com
+          </a>
+        </li>
+        <li>
+          <a class="ota-btn" href="https://share.google/idkGtI2yAbIVGE6lY" target="_blank" rel="noopener noreferrer" data-track="google_click">
+            <svg class="ota-logo" viewBox="0 0 32 32" aria-hidden="true"><path d="M28 16.3c0-.9-.1-1.8-.3-2.6H16v5h6.7c-.3 1.5-1.1 2.7-2.4 3.6v3h3.9c2.3-2.1 3.8-5.3 3.8-9z" fill="#4285F4"/><path d="M16 29c3.4 0 6.2-1.1 8.3-3l-3.9-3c-1.1.7-2.6 1.1-4.4 1.1-3.3 0-6.1-2.2-7.1-5.3H4.9v3.2C7 26.4 11.2 29 16 29z" fill="#34A853"/><path d="M8.9 18.8c-.3-.7-.4-1.5-.4-2.3 0-.8.1-1.6.4-2.3v-3.2H4.9C4 12.9 3.5 14.4 3.5 16s.5 3.1 1.4 4.3l3.5-2.8.5.5z" fill="#FBBC04"/><path d="M16 10.4c1.9 0 3.5.6 4.8 1.9l3.6-3.6C22.2 6.6 19.4 5.5 16 5.5 11.2 5.5 7 8.1 4.9 11.9l4 3.2c1-3.1 3.8-4.7 7.1-4.7z" fill="#EA4335"/></svg>
+            Google
+          </a>
+        </li>
+        <li>
+          <a class="ota-btn" href="https://www.google.com/maps/search/?api=1&amp;query=26.4891199,74.5600403" target="_blank" rel="noopener noreferrer" data-link="maps">
+            <svg class="ota-logo" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 5a8 8 0 0 0-8 8c0 5.6 8 14 8 14s8-8.4 8-14a8 8 0 0 0-8-8z" fill="#4285F4" opacity=".15"/><path d="M16 5a8 8 0 0 0-8 8c0 5.6 8 14 8 14s8-8.4 8-14a8 8 0 0 0-8-8z" stroke="#4285F4" stroke-width="1.5" fill="none"/><circle cx="16" cy="13" r="3" fill="#4285F4"/></svg>
+            Google Maps
+          </a>
+        </li>
+        <li>
+          <a class="ota-btn" href="https://www.instagram.com/brahmasarovarpushkar" target="_blank" rel="noopener noreferrer" data-track="instagram_click">
+            <svg class="ota-logo" viewBox="0 0 32 32" aria-hidden="true"><defs><radialGradient id="ig-g" cx="30%" cy="107%" r="150%"><stop offset="0%" stop-color="#fdf497"/><stop offset="5%" stop-color="#fdf497"/><stop offset="45%" stop-color="#fd5949"/><stop offset="60%" stop-color="#d6249f"/><stop offset="90%" stop-color="#285AEB"/></radialGradient></defs><rect x="4" y="4" width="24" height="24" rx="6" fill="url(#ig-g)"/><rect x="8" y="8" width="16" height="16" rx="4" stroke="#fff" stroke-width="1.5" fill="none"/><circle cx="16" cy="16" r="4" stroke="#fff" stroke-width="1.5" fill="none"/><circle cx="21" cy="11" r="1" fill="#fff"/></svg>
+            Instagram
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
 <!-- 12. Closing CTA band -->
 <section class="cta-band" aria-labelledby="cta-title">
   <div class="container">
@@ -837,7 +947,7 @@ a[data-whatsapp]:not(.btn):hover,a[data-call]:not(.btn):hover{transform:translat
     <div class="btn-row">
       <a class="btn btn-primary btn-on-dark" href="#enquiry" data-whatsapp data-track="whatsapp_click">Enquire on WhatsApp</a>
       <a class="btn btn-secondary btn-on-dark" href="#contact-info" data-call data-track="call_click">Call</a>
-      <a class="btn btn-secondary btn-on-dark" href="https://www.booking.com/hotel/in/brahma-sarovar-home-stay-and-cafe-pushkar.en-gb.html" target="_blank" rel="noopener noreferrer" data-track="booking_click">Book on Booking.com</a>
+      <a class="btn btn-secondary btn-on-dark" href="https://www.booking.com/hotel/in/brahma-sarovar-home-stay-and-cafe-pushkar.html" target="_blank" rel="noopener noreferrer" data-track="booking_click">Book on Booking.com</a>
     </div>
   </div>
 </section>
@@ -1010,7 +1120,7 @@ a[data-whatsapp]:not(.btn):hover,a[data-call]:not(.btn):hover{transform:translat
     </form>
   </aside>
 </div>
-<section class="section" aria-label="Google reviews"><div class="container"><h2>Guest reviews on Google</h2><div class="g-counter" data-google-counter role="img" aria-label="Rated 4.8 out of 5 from 5 Google reviews"><span class="stars" style="--fill:96%" aria-hidden="true">★★★★★</span><span class="g-text"><strong><span data-count-rating>4.8</span> on Google</strong> · <span data-count-num>5</span> reviews</span></div><div class="review-row" data-reviews hidden></div></div></section>
+<section class="section" aria-label="Google reviews"><div class="container"><h2>Guest reviews on Google</h2><div class="g-counter" data-google-counter role="img" aria-label="Rated 4.8 out of 5 on Google"><span class="stars" style="--fill:96%" aria-hidden="true">★★★★★</span><span class="g-text"><strong><span data-count-rating>4.8</span> on Google</strong></span></div><div class="review-row" data-reviews hidden></div></div></section>
 <section class="section section-alt" aria-labelledby="other-title-deluxe-double-room">
   <div class="container">
     <h2 id="other-title-deluxe-double-room">Other rooms</h2>
@@ -1070,7 +1180,7 @@ a[data-whatsapp]:not(.btn):hover,a[data-call]:not(.btn):hover{transform:translat
     <h2 id="near-deluxe-double-room" class="title-rule">Famous places near us</h2>
     <p class="section-intro">Pushkar's lake, ghats and temples are close to our stay in Choti Basti.</p>
     <div class="near-grid">
-      <div class="near-col rv"><h3>Lake, ghats and temples</h3><ul><li><span>Mahadeva Ghat, Pushkar Lake</span><span class="near-d">400 m</span></li><li><span>Brahma Temple</span><span class="near-d">≈ 1 km</span></li><li><span>Varaha Temple</span><span class="near-d">≈ 1 km</span></li><li><span>Gurudwara</span><span class="near-d">300 m</span></li><li><span>Shri Rama Vaikunth Nath (Naya Rang Ji) Temple, Pushkar<br><span lang="hi">श्री रमा वैकुण्ठ नाथ मंदिर, पुष्कर</span></span><span class="near-d">400 m</span></li><li><span>Pushkar Ghat</span><span class="near-d">800 m</span></li></ul><p class="near-more">Also in Pushkar: Savitri Mata Temple, Gayatri Temple. Ask us for directions.</p></div>
+      <div class="near-col rv"><h3>Lake, ghats and temples</h3><ul><li><span>Mahadeva Ghat, Pushkar Lake</span><span class="near-d">400 m</span></li><li><span>Brahma Temple</span><span class="near-d">≈ 1 km</span></li><li><span>Varaha Temple</span><span class="near-d">≈ 1 km</span></li><li><span>Gurudwara</span><span class="near-d">300 m</span></li><li><span>Shri Rama Vaikunth Nath (Naya Rang Ji) Temple, Pushkar</span><span class="near-d">400 m</span></li><li><span>Pushkar Ghat</span><span class="near-d">800 m</span></li></ul><p class="near-more">Also in Pushkar: Savitri Mata Temple, Gayatri Temple. Ask us for directions.</p></div>
       <div class="near-col rv" style="--d:100ms"><h3>Parks and sights</h3><ul><li><span>Pandit Din Dayal Upadhyay Udyan</span><span class="near-d">200 m</span></li><li><span>Peace Park</span><span class="near-d">850 m</span></li><li><span>Pushkar Mela Ground</span><span class="near-d">1.3 km</span></li><li><span>Pushkar Fort</span><span class="near-d">3.3 km</span></li><li><span>Anasagar Lake, Ajmer</span><span class="near-d">9.5 km</span></li></ul></div>
       <div class="near-col rv" style="--d:200ms"><h3>Getting here</h3><ul><li><span>Pushkar railway station</span><span class="near-d">2.7 km</span></li><li><span>Ajmer Junction</span><span class="near-d">13 km</span></li><li><span>Kishangarh Airport</span><span class="near-d">35 km</span></li></ul></div>
     </div>
@@ -1142,7 +1252,7 @@ a[data-whatsapp]:not(.btn):hover,a[data-call]:not(.btn):hover{transform:translat
     </form>
   </aside>
 </div>
-<section class="section" aria-label="Google reviews"><div class="container"><h2>Guest reviews on Google</h2><div class="g-counter" data-google-counter role="img" aria-label="Rated 4.8 out of 5 from 5 Google reviews"><span class="stars" style="--fill:96%" aria-hidden="true">★★★★★</span><span class="g-text"><strong><span data-count-rating>4.8</span> on Google</strong> · <span data-count-num>5</span> reviews</span></div><div class="review-row" data-reviews hidden></div></div></section>
+<section class="section" aria-label="Google reviews"><div class="container"><h2>Guest reviews on Google</h2><div class="g-counter" data-google-counter role="img" aria-label="Rated 4.8 out of 5 on Google"><span class="stars" style="--fill:96%" aria-hidden="true">★★★★★</span><span class="g-text"><strong><span data-count-rating>4.8</span> on Google</strong></span></div><div class="review-row" data-reviews hidden></div></div></section>
 <section class="section section-alt" aria-labelledby="other-title-deluxe-double-room-203">
   <div class="container">
     <h2 id="other-title-deluxe-double-room-203">Other rooms</h2>
@@ -1202,7 +1312,7 @@ a[data-whatsapp]:not(.btn):hover,a[data-call]:not(.btn):hover{transform:translat
     <h2 id="near-deluxe-double-room-203" class="title-rule">Famous places near us</h2>
     <p class="section-intro">Pushkar's lake, ghats and temples are close to our stay in Choti Basti.</p>
     <div class="near-grid">
-      <div class="near-col rv"><h3>Lake, ghats and temples</h3><ul><li><span>Mahadeva Ghat, Pushkar Lake</span><span class="near-d">400 m</span></li><li><span>Brahma Temple</span><span class="near-d">≈ 1 km</span></li><li><span>Varaha Temple</span><span class="near-d">≈ 1 km</span></li><li><span>Gurudwara</span><span class="near-d">300 m</span></li><li><span>Shri Rama Vaikunth Nath (Naya Rang Ji) Temple, Pushkar<br><span lang="hi">श्री रमा वैकुण्ठ नाथ मंदिर, पुष्कर</span></span><span class="near-d">400 m</span></li><li><span>Pushkar Ghat</span><span class="near-d">800 m</span></li></ul><p class="near-more">Also in Pushkar: Savitri Mata Temple, Gayatri Temple. Ask us for directions.</p></div>
+      <div class="near-col rv"><h3>Lake, ghats and temples</h3><ul><li><span>Mahadeva Ghat, Pushkar Lake</span><span class="near-d">400 m</span></li><li><span>Brahma Temple</span><span class="near-d">≈ 1 km</span></li><li><span>Varaha Temple</span><span class="near-d">≈ 1 km</span></li><li><span>Gurudwara</span><span class="near-d">300 m</span></li><li><span>Shri Rama Vaikunth Nath (Naya Rang Ji) Temple, Pushkar</span><span class="near-d">400 m</span></li><li><span>Pushkar Ghat</span><span class="near-d">800 m</span></li></ul><p class="near-more">Also in Pushkar: Savitri Mata Temple, Gayatri Temple. Ask us for directions.</p></div>
       <div class="near-col rv" style="--d:100ms"><h3>Parks and sights</h3><ul><li><span>Pandit Din Dayal Upadhyay Udyan</span><span class="near-d">200 m</span></li><li><span>Peace Park</span><span class="near-d">850 m</span></li><li><span>Pushkar Mela Ground</span><span class="near-d">1.3 km</span></li><li><span>Pushkar Fort</span><span class="near-d">3.3 km</span></li><li><span>Anasagar Lake, Ajmer</span><span class="near-d">9.5 km</span></li></ul></div>
       <div class="near-col rv" style="--d:200ms"><h3>Getting here</h3><ul><li><span>Pushkar railway station</span><span class="near-d">2.7 km</span></li><li><span>Ajmer Junction</span><span class="near-d">13 km</span></li><li><span>Kishangarh Airport</span><span class="near-d">35 km</span></li></ul></div>
     </div>
@@ -1276,7 +1386,7 @@ a[data-whatsapp]:not(.btn):hover,a[data-call]:not(.btn):hover{transform:translat
     </form>
   </aside>
 </div>
-<section class="section" aria-label="Google reviews"><div class="container"><h2>Guest reviews on Google</h2><div class="g-counter" data-google-counter role="img" aria-label="Rated 4.8 out of 5 from 5 Google reviews"><span class="stars" style="--fill:96%" aria-hidden="true">★★★★★</span><span class="g-text"><strong><span data-count-rating>4.8</span> on Google</strong> · <span data-count-num>5</span> reviews</span></div><div class="review-row" data-reviews hidden></div></div></section>
+<section class="section" aria-label="Google reviews"><div class="container"><h2>Guest reviews on Google</h2><div class="g-counter" data-google-counter role="img" aria-label="Rated 4.8 out of 5 on Google"><span class="stars" style="--fill:96%" aria-hidden="true">★★★★★</span><span class="g-text"><strong><span data-count-rating>4.8</span> on Google</strong></span></div><div class="review-row" data-reviews hidden></div></div></section>
 <section class="section section-alt" aria-labelledby="other-title-deluxe-double-room-with-balcony">
   <div class="container">
     <h2 id="other-title-deluxe-double-room-with-balcony">Other rooms</h2>
@@ -1336,7 +1446,7 @@ a[data-whatsapp]:not(.btn):hover,a[data-call]:not(.btn):hover{transform:translat
     <h2 id="near-deluxe-double-room-with-balcony" class="title-rule">Famous places near us</h2>
     <p class="section-intro">Pushkar's lake, ghats and temples are close to our stay in Choti Basti.</p>
     <div class="near-grid">
-      <div class="near-col rv"><h3>Lake, ghats and temples</h3><ul><li><span>Mahadeva Ghat, Pushkar Lake</span><span class="near-d">400 m</span></li><li><span>Brahma Temple</span><span class="near-d">≈ 1 km</span></li><li><span>Varaha Temple</span><span class="near-d">≈ 1 km</span></li><li><span>Gurudwara</span><span class="near-d">300 m</span></li><li><span>Shri Rama Vaikunth Nath (Naya Rang Ji) Temple, Pushkar<br><span lang="hi">श्री रमा वैकुण्ठ नाथ मंदिर, पुष्कर</span></span><span class="near-d">400 m</span></li><li><span>Pushkar Ghat</span><span class="near-d">800 m</span></li></ul><p class="near-more">Also in Pushkar: Savitri Mata Temple, Gayatri Temple. Ask us for directions.</p></div>
+      <div class="near-col rv"><h3>Lake, ghats and temples</h3><ul><li><span>Mahadeva Ghat, Pushkar Lake</span><span class="near-d">400 m</span></li><li><span>Brahma Temple</span><span class="near-d">≈ 1 km</span></li><li><span>Varaha Temple</span><span class="near-d">≈ 1 km</span></li><li><span>Gurudwara</span><span class="near-d">300 m</span></li><li><span>Shri Rama Vaikunth Nath (Naya Rang Ji) Temple, Pushkar</span><span class="near-d">400 m</span></li><li><span>Pushkar Ghat</span><span class="near-d">800 m</span></li></ul><p class="near-more">Also in Pushkar: Savitri Mata Temple, Gayatri Temple. Ask us for directions.</p></div>
       <div class="near-col rv" style="--d:100ms"><h3>Parks and sights</h3><ul><li><span>Pandit Din Dayal Upadhyay Udyan</span><span class="near-d">200 m</span></li><li><span>Peace Park</span><span class="near-d">850 m</span></li><li><span>Pushkar Mela Ground</span><span class="near-d">1.3 km</span></li><li><span>Pushkar Fort</span><span class="near-d">3.3 km</span></li><li><span>Anasagar Lake, Ajmer</span><span class="near-d">9.5 km</span></li></ul></div>
       <div class="near-col rv" style="--d:200ms"><h3>Getting here</h3><ul><li><span>Pushkar railway station</span><span class="near-d">2.7 km</span></li><li><span>Ajmer Junction</span><span class="near-d">13 km</span></li><li><span>Kishangarh Airport</span><span class="near-d">35 km</span></li></ul></div>
     </div>
@@ -1409,7 +1519,7 @@ a[data-whatsapp]:not(.btn):hover,a[data-call]:not(.btn):hover{transform:translat
     </form>
   </aside>
 </div>
-<section class="section" aria-label="Google reviews"><div class="container"><h2>Guest reviews on Google</h2><div class="g-counter" data-google-counter role="img" aria-label="Rated 4.8 out of 5 from 5 Google reviews"><span class="stars" style="--fill:96%" aria-hidden="true">★★★★★</span><span class="g-text"><strong><span data-count-rating>4.8</span> on Google</strong> · <span data-count-num>5</span> reviews</span></div><div class="review-row" data-reviews hidden></div></div></section>
+<section class="section" aria-label="Google reviews"><div class="container"><h2>Guest reviews on Google</h2><div class="g-counter" data-google-counter role="img" aria-label="Rated 4.8 out of 5 on Google"><span class="stars" style="--fill:96%" aria-hidden="true">★★★★★</span><span class="g-text"><strong><span data-count-rating>4.8</span> on Google</strong></span></div><div class="review-row" data-reviews hidden></div></div></section>
 <section class="section section-alt" aria-labelledby="other-title-deluxe-double-room-2-adults-1-child">
   <div class="container">
     <h2 id="other-title-deluxe-double-room-2-adults-1-child">Other rooms</h2>
@@ -1469,7 +1579,7 @@ a[data-whatsapp]:not(.btn):hover,a[data-call]:not(.btn):hover{transform:translat
     <h2 id="near-deluxe-double-room-2-adults-1-child" class="title-rule">Famous places near us</h2>
     <p class="section-intro">Pushkar's lake, ghats and temples are close to our stay in Choti Basti.</p>
     <div class="near-grid">
-      <div class="near-col rv"><h3>Lake, ghats and temples</h3><ul><li><span>Mahadeva Ghat, Pushkar Lake</span><span class="near-d">400 m</span></li><li><span>Brahma Temple</span><span class="near-d">≈ 1 km</span></li><li><span>Varaha Temple</span><span class="near-d">≈ 1 km</span></li><li><span>Gurudwara</span><span class="near-d">300 m</span></li><li><span>Shri Rama Vaikunth Nath (Naya Rang Ji) Temple, Pushkar<br><span lang="hi">श्री रमा वैकुण्ठ नाथ मंदिर, पुष्कर</span></span><span class="near-d">400 m</span></li><li><span>Pushkar Ghat</span><span class="near-d">800 m</span></li></ul><p class="near-more">Also in Pushkar: Savitri Mata Temple, Gayatri Temple. Ask us for directions.</p></div>
+      <div class="near-col rv"><h3>Lake, ghats and temples</h3><ul><li><span>Mahadeva Ghat, Pushkar Lake</span><span class="near-d">400 m</span></li><li><span>Brahma Temple</span><span class="near-d">≈ 1 km</span></li><li><span>Varaha Temple</span><span class="near-d">≈ 1 km</span></li><li><span>Gurudwara</span><span class="near-d">300 m</span></li><li><span>Shri Rama Vaikunth Nath (Naya Rang Ji) Temple, Pushkar</span><span class="near-d">400 m</span></li><li><span>Pushkar Ghat</span><span class="near-d">800 m</span></li></ul><p class="near-more">Also in Pushkar: Savitri Mata Temple, Gayatri Temple. Ask us for directions.</p></div>
       <div class="near-col rv" style="--d:100ms"><h3>Parks and sights</h3><ul><li><span>Pandit Din Dayal Upadhyay Udyan</span><span class="near-d">200 m</span></li><li><span>Peace Park</span><span class="near-d">850 m</span></li><li><span>Pushkar Mela Ground</span><span class="near-d">1.3 km</span></li><li><span>Pushkar Fort</span><span class="near-d">3.3 km</span></li><li><span>Anasagar Lake, Ajmer</span><span class="near-d">9.5 km</span></li></ul></div>
       <div class="near-col rv" style="--d:200ms"><h3>Getting here</h3><ul><li><span>Pushkar railway station</span><span class="near-d">2.7 km</span></li><li><span>Ajmer Junction</span><span class="near-d">13 km</span></li><li><span>Kishangarh Airport</span><span class="near-d">35 km</span></li></ul></div>
     </div>
@@ -1548,7 +1658,7 @@ a[data-whatsapp]:not(.btn):hover,a[data-call]:not(.btn):hover{transform:translat
     </form>
   </aside>
 </div>
-<section class="section" aria-label="Google reviews"><div class="container"><h2>Guest reviews on Google</h2><div class="g-counter" data-google-counter role="img" aria-label="Rated 4.8 out of 5 from 5 Google reviews"><span class="stars" style="--fill:96%" aria-hidden="true">★★★★★</span><span class="g-text"><strong><span data-count-rating>4.8</span> on Google</strong> · <span data-count-num>5</span> reviews</span></div><div class="review-row" data-reviews hidden></div></div></section>
+<section class="section" aria-label="Google reviews"><div class="container"><h2>Guest reviews on Google</h2><div class="g-counter" data-google-counter role="img" aria-label="Rated 4.8 out of 5 on Google"><span class="stars" style="--fill:96%" aria-hidden="true">★★★★★</span><span class="g-text"><strong><span data-count-rating>4.8</span> on Google</strong></span></div><div class="review-row" data-reviews hidden></div></div></section>
 <section class="section section-alt" aria-labelledby="other-title-double-room-with-extra-bed">
   <div class="container">
     <h2 id="other-title-double-room-with-extra-bed">Other rooms</h2>
@@ -1608,7 +1718,7 @@ a[data-whatsapp]:not(.btn):hover,a[data-call]:not(.btn):hover{transform:translat
     <h2 id="near-double-room-with-extra-bed" class="title-rule">Famous places near us</h2>
     <p class="section-intro">Pushkar's lake, ghats and temples are close to our stay in Choti Basti.</p>
     <div class="near-grid">
-      <div class="near-col rv"><h3>Lake, ghats and temples</h3><ul><li><span>Mahadeva Ghat, Pushkar Lake</span><span class="near-d">400 m</span></li><li><span>Brahma Temple</span><span class="near-d">≈ 1 km</span></li><li><span>Varaha Temple</span><span class="near-d">≈ 1 km</span></li><li><span>Gurudwara</span><span class="near-d">300 m</span></li><li><span>Shri Rama Vaikunth Nath (Naya Rang Ji) Temple, Pushkar<br><span lang="hi">श्री रमा वैकुण्ठ नाथ मंदिर, पुष्कर</span></span><span class="near-d">400 m</span></li><li><span>Pushkar Ghat</span><span class="near-d">800 m</span></li></ul><p class="near-more">Also in Pushkar: Savitri Mata Temple, Gayatri Temple. Ask us for directions.</p></div>
+      <div class="near-col rv"><h3>Lake, ghats and temples</h3><ul><li><span>Mahadeva Ghat, Pushkar Lake</span><span class="near-d">400 m</span></li><li><span>Brahma Temple</span><span class="near-d">≈ 1 km</span></li><li><span>Varaha Temple</span><span class="near-d">≈ 1 km</span></li><li><span>Gurudwara</span><span class="near-d">300 m</span></li><li><span>Shri Rama Vaikunth Nath (Naya Rang Ji) Temple, Pushkar</span><span class="near-d">400 m</span></li><li><span>Pushkar Ghat</span><span class="near-d">800 m</span></li></ul><p class="near-more">Also in Pushkar: Savitri Mata Temple, Gayatri Temple. Ask us for directions.</p></div>
       <div class="near-col rv" style="--d:100ms"><h3>Parks and sights</h3><ul><li><span>Pandit Din Dayal Upadhyay Udyan</span><span class="near-d">200 m</span></li><li><span>Peace Park</span><span class="near-d">850 m</span></li><li><span>Pushkar Mela Ground</span><span class="near-d">1.3 km</span></li><li><span>Pushkar Fort</span><span class="near-d">3.3 km</span></li><li><span>Anasagar Lake, Ajmer</span><span class="near-d">9.5 km</span></li></ul></div>
       <div class="near-col rv" style="--d:200ms"><h3>Getting here</h3><ul><li><span>Pushkar railway station</span><span class="near-d">2.7 km</span></li><li><span>Ajmer Junction</span><span class="near-d">13 km</span></li><li><span>Kishangarh Airport</span><span class="near-d">35 km</span></li></ul></div>
     </div>
@@ -1974,10 +2084,18 @@ a[data-whatsapp]:not(.btn):hover,a[data-call]:not(.btn):hover{transform:translat
         <li><a href="#privacy-policy">Privacy policy</a></li>
       </ul>
     </nav>
-    <ul>
-      <li><a href="https://www.google.com/maps/search/?api=1&amp;query=26.4891199,74.5600403" data-link="maps" target="_blank" rel="noopener noreferrer">Google Maps</a></li>
-      <li><a href="https://www.booking.com/hotel/in/brahma-sarovar-home-stay-and-cafe-pushkar.en-gb.html" target="_blank" rel="noopener noreferrer" data-track="booking_click">Booking.com</a></li>
-    </ul>
+    <div>
+      <p class="footer-col-label">Book &amp; connect</p>
+      <ul>
+        <li><a href="https://www.booking.com/hotel/in/brahma-sarovar-home-stay-and-cafe-pushkar.html" target="_blank" rel="noopener noreferrer" data-track="booking_click">Booking.com</a></li>
+        <li><a href="https://www.agoda.com/en-au/brahma-sarovar-home-stay-and-cafe-h98816980/hotel/all/pushkar-in.html" target="_blank" rel="noopener noreferrer" data-track="agoda_click">Agoda</a></li>
+        <li><a href="https://www.airbnb.co.in/rooms/1806528421689457205" target="_blank" rel="noopener noreferrer" data-track="airbnb_click">Airbnb</a></li>
+        <li><a href="https://share.google/idkGtI2yAbIVGE6lY" target="_blank" rel="noopener noreferrer" data-track="google_review_click">Google Reviews</a></li>
+        <li><a href="https://www.instagram.com/brahmasarovarpushkar" target="_blank" rel="noopener noreferrer" data-track="instagram_click">Instagram</a></li>
+        <li><a href="https://www.google.com/maps/search/?api=1&amp;query=26.4891199,74.5600403" data-link="maps" target="_blank" rel="noopener noreferrer">Google Maps</a></li>
+        <li><a href="https://bharhmsarovar.github.io/bhrahma/pushkar-guide.html" target="_blank" rel="noopener noreferrer">Pushkar Hub</a></li>
+      </ul>
+    </div>
   </div>
   <div class="container footer-base">
     <p>© <span data-year>2026</span> Brahma Sarovar Home Stay and Cafe. Designed by DDS Agency.</p>
