@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://brahmasarovar.com/index.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Core / Booking pages -->
+  <url><loc>https://brahmasarovar.com/couples-stay-pushkar.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://brahmasarovar.com/family-rooms-pushkar.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://brahmasarovar.com/solo-traveller-stay-pushkar.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://brahmasarovar.com/long-stay-workation-pushkar.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://brahmasarovar.com/where-to-stay-in-pushkar.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://brahmasarovar.com/stay-near-pushkar-lake-choti-basti.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://brahmasarovar.com/homestays-near-brahma-temple-pushkar.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://brahmasarovar.com/directions-brahma-sarovar-pushkar.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+  <!-- Pushkar travel / transport guides -->
+  <url><loc>https://brahmasarovar.com/how-to-reach-pushkar.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://brahmasarovar.com/delhi-to-pushkar.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://brahmasarovar.com/jaipur-to-pushkar.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://brahmasarovar.com/ajmer-kishangarh-airport-to-pushkar.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://brahmasarovar.com/ajmer-to-pushkar-travel-guide.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://brahmasarovar.com/ajmer-sharif-day-trip-from-pushkar.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://brahmasarovar.com/pushkar-travel-guide-first-time-visitors.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://brahmasarovar.com/pushkar-2-day-itinerary.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://brahmasarovar.com/pushkar-etiquette-safety.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+
+  <!-- Things to do / attractions -->
+  <url><loc>https://brahmasarovar.com/things-to-do-in-pushkar.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://brahmasarovar.com/places-to-visit-in-pushkar.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://brahmasarovar.com/pushkar-guide.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://brahmasarovar.com/pushkar-lake-guide.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://brahmasarovar.com/pushkar-ghats-guide.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://brahmasarovar.com/pushkar-market-guide.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://brahmasarovar.com/camel-safari-sunset-dunes-pushkar.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://brahmasarovar.com/rangji-temple-pushkar.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://brahmasarovar.com/savitri-temple-pushkar.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://brahmasarovar.com/varaha-temple-pushkar.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+
+  <!-- Fair / festival / timing -->
+  <url><loc>https://brahmasarovar.com/pushkar-fair-guide.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://brahmasarovar.com/kartik-purnima-pushkar-snan.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://brahmasarovar.com/best-time-to-visit-pushkar.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+  <!-- Budget page (name truncated in repo screenshot — verify exact filename before upload) -->
+  <url><loc>https://brahmasarovar.com/ac-rooms-in-pushkar-under-2500.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+</urlset>
