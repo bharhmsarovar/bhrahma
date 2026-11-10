@@ -597,6 +597,8 @@ h2.sec::after{content:"";display:block;width:52px;height:4px;margin-top:.4rem;bo
 .room{background:var(--paper);border:1px solid var(--sand-200);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
 .room .ph{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--sand-200)}
 .room .ph img{width:100%;height:100%;object-fit:cover;display:block}
+.ph.img-broken,.visual.img-broken{display:flex;align-items:center;justify-content:center;background:var(--sand-200);color:var(--ink-soft);font-size:.78rem;text-align:center;padding:.6rem}
+.ph.img-broken::before,.visual.img-broken::before{content:"Photo loading issue — check connection"}
 .room .badge{position:absolute;top:.6rem;right:.6rem;background:var(--vermilion-700);color:#fff;font-size:.72rem;font-weight:700;padding:.25rem .55rem;border-radius:999px}
 .room .body{padding:.9rem 1rem 1.1rem;display:flex;flex-direction:column;gap:.3rem;flex:1}
 .room h3{margin:0;font:700 1rem var(--serif);color:var(--maroon-800)}
@@ -829,45 +831,27 @@ footer.site-footer li{margin:.3rem 0;font-size:.88rem}
       <p class="cat-intro">Routes and directions from Delhi, Jaipur, Ajmer, Kishangarh Airport and straight to our door.</p>
       <div class="cat-grid">
         <a class="gcard" href="how-to-reach-pushkar.html">
-          <span class="visual"><svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" focusable="false">
-<defs><linearGradient id="g8" x1="0" y1="0" x2="0.3" y2="1">
-<stop offset="0" stop-color="#F7B955"/><stop offset="1" stop-color="#B83A14"/></linearGradient></defs>
-<rect width="400" height="220" fill="url(#g8)"/><circle cx="340" cy="46" r="26" fill="#FBF6EC" opacity=".9"/><path d="M0 150 Q70 110 150 140 T400 120 V220 H0 Z" fill="#FBF6EC" opacity=".16"/><path d="M0 185 Q90 150 220 178 T400 160 V220 H0 Z" fill="#FBF6EC" opacity=".26"/><path d="M-10 220 C120 150 90 120 170 95 S 260 60 410 40" stroke="#2B1A10" stroke-opacity=".28" stroke-width="34" fill="none" stroke-linecap="round"/><path d="M-10 220 C120 150 90 120 170 95 S 260 60 410 40" stroke="#FBF6EC" stroke-opacity=".8" stroke-width="2.5" stroke-dasharray="10 10" fill="none" stroke-linecap="round"/><circle cx="42" cy="42" r="22" fill="#FBF6EC" opacity=".92"/><path transform="translate(28,32)" d="M0 10h26M6 10l5-7h5l-3 7M9 10l-2 6h4l1-6" stroke="#B83A14" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/><text x="20" y="200" font-family="Georgia,serif" font-weight="700" font-size="17" letter-spacing="1" fill="#FBF6EC">ALL ROUTES</text></svg></span>
+          <span class="visual"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pushkar.jpg?width=800" loading="lazy" alt="Aerial view of Pushkar town, your starting point for getting here"></span>
           <span class="cbody"><h3>How to Reach Pushkar</h3><p>Every way to get to Pushkar — road, rail and air — in one place.</p><span class="readmore">Read the guide &rarr;</span></span>
         </a>
         <a class="gcard" href="delhi-to-pushkar.html">
-          <span class="visual"><svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" focusable="false">
-<defs><linearGradient id="g9" x1="0" y1="0" x2="0.3" y2="1">
-<stop offset="0" stop-color="#D9B988"/><stop offset="1" stop-color="#5B2118"/></linearGradient></defs>
-<rect width="400" height="220" fill="url(#g9)"/><circle cx="340" cy="46" r="26" fill="#FBF6EC" opacity=".9"/><path d="M0 150 Q70 110 150 140 T400 120 V220 H0 Z" fill="#FBF6EC" opacity=".16"/><path d="M0 185 Q90 150 220 178 T400 160 V220 H0 Z" fill="#FBF6EC" opacity=".26"/><path d="M-10 220 C120 150 90 120 170 95 S 260 60 410 40" stroke="#2B1A10" stroke-opacity=".28" stroke-width="34" fill="none" stroke-linecap="round"/><path d="M-10 220 C120 150 90 120 170 95 S 260 60 410 40" stroke="#FBF6EC" stroke-opacity=".8" stroke-width="2.5" stroke-dasharray="10 10" fill="none" stroke-linecap="round"/><circle cx="42" cy="42" r="22" fill="#FBF6EC" opacity=".92"/><path transform="translate(28,32)" d="M0 10h26M6 10l5-7h5l-3 7M9 10l-2 6h4l1-6" stroke="#B83A14" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/><text x="20" y="200" font-family="Georgia,serif" font-weight="700" font-size="17" letter-spacing="1" fill="#FBF6EC">DELHI → PUSHKAR</text></svg></span>
+          <span class="visual"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Hills_around_Pushkar%2C_turn_green_during_the_Monsoon.jpg?width=800" loading="lazy" alt="Hill road through the Aravallis on the Delhi–Pushkar route"></span>
           <span class="cbody"><h3>Delhi to Pushkar</h3><p>Travel options and what to expect on the Delhi–Pushkar route.</p><span class="readmore">Read the guide &rarr;</span></span>
         </a>
         <a class="gcard" href="jaipur-to-pushkar.html">
-          <span class="visual"><svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" focusable="false">
-<defs><linearGradient id="g10" x1="0" y1="0" x2="0.3" y2="1">
-<stop offset="0" stop-color="#F4E8D0"/><stop offset="1" stop-color="#E8822A"/></linearGradient></defs>
-<rect width="400" height="220" fill="url(#g10)"/><circle cx="340" cy="46" r="26" fill="#FBF6EC" opacity=".9"/><path d="M0 150 Q70 110 150 140 T400 120 V220 H0 Z" fill="#FBF6EC" opacity=".16"/><path d="M0 185 Q90 150 220 178 T400 160 V220 H0 Z" fill="#FBF6EC" opacity=".26"/><path d="M-10 220 C120 150 90 120 170 95 S 260 60 410 40" stroke="#2B1A10" stroke-opacity=".28" stroke-width="34" fill="none" stroke-linecap="round"/><path d="M-10 220 C120 150 90 120 170 95 S 260 60 410 40" stroke="#FBF6EC" stroke-opacity=".8" stroke-width="2.5" stroke-dasharray="10 10" fill="none" stroke-linecap="round"/><circle cx="42" cy="42" r="22" fill="#FBF6EC" opacity=".92"/><path transform="translate(28,32)" d="M0 10h26M6 10l5-7h5l-3 7M9 10l-2 6h4l1-6" stroke="#B83A14" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/><text x="20" y="200" font-family="Georgia,serif" font-weight="700" font-size="17" letter-spacing="1" fill="#FBF6EC">JAIPUR → PUSHKAR</text></svg></span>
+          <span class="visual"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/BrahmaPushkarGurjarPilgrimage.jpg?width=800" loading="lazy" alt="Pilgrims arriving in Pushkar, a common sight on the Jaipur road"></span>
           <span class="cbody"><h3>Jaipur to Pushkar</h3><p>Distance, routes and travel time from Jaipur.</p><span class="readmore">Read the guide &rarr;</span></span>
         </a>
         <a class="gcard" href="ajmer-to-pushkar-travel-guide.html">
-          <span class="visual"><svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" focusable="false">
-<defs><linearGradient id="g11" x1="0" y1="0" x2="0.3" y2="1">
-<stop offset="0" stop-color="#F7B955"/><stop offset="1" stop-color="#B83A14"/></linearGradient></defs>
-<rect width="400" height="220" fill="url(#g11)"/><circle cx="340" cy="46" r="26" fill="#FBF6EC" opacity=".9"/><path d="M0 150 Q70 110 150 140 T400 120 V220 H0 Z" fill="#FBF6EC" opacity=".16"/><path d="M0 185 Q90 150 220 178 T400 160 V220 H0 Z" fill="#FBF6EC" opacity=".26"/><path d="M-10 220 C120 150 90 120 170 95 S 260 60 410 40" stroke="#2B1A10" stroke-opacity=".28" stroke-width="34" fill="none" stroke-linecap="round"/><path d="M-10 220 C120 150 90 120 170 95 S 260 60 410 40" stroke="#FBF6EC" stroke-opacity=".8" stroke-width="2.5" stroke-dasharray="10 10" fill="none" stroke-linecap="round"/><circle cx="42" cy="42" r="22" fill="#FBF6EC" opacity=".92"/><path transform="translate(28,32)" d="M0 10h26M6 10l5-7h5l-3 7M9 10l-2 6h4l1-6" stroke="#B83A14" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/><text x="20" y="200" font-family="Georgia,serif" font-weight="700" font-size="17" letter-spacing="1" fill="#FBF6EC">AJMER → PUSHKAR</text></svg></span>
+          <span class="visual"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bridge_at_the_corner_of_the_Pushkar_lake%2C_Rajasthan.jpg?width=800" loading="lazy" alt="Bridge at the edge of Pushkar Lake, near the Ajmer road entry"></span>
           <span class="cbody"><h3>Ajmer to Pushkar</h3><p>The short hop between Ajmer and Pushkar, covered in detail.</p><span class="readmore">Read the guide &rarr;</span></span>
         </a>
         <a class="gcard" href="ajmer-kishangarh-airport-to-pushkar.html">
-          <span class="visual"><svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" focusable="false">
-<defs><linearGradient id="g12" x1="0" y1="0" x2="0.3" y2="1">
-<stop offset="0" stop-color="#D9B988"/><stop offset="1" stop-color="#5B2118"/></linearGradient></defs>
-<rect width="400" height="220" fill="url(#g12)"/><circle cx="340" cy="46" r="26" fill="#FBF6EC" opacity=".9"/><path d="M0 150 Q70 110 150 140 T400 120 V220 H0 Z" fill="#FBF6EC" opacity=".16"/><path d="M0 185 Q90 150 220 178 T400 160 V220 H0 Z" fill="#FBF6EC" opacity=".26"/><path d="M-10 220 C120 150 90 120 170 95 S 260 60 410 40" stroke="#2B1A10" stroke-opacity=".28" stroke-width="34" fill="none" stroke-linecap="round"/><path d="M-10 220 C120 150 90 120 170 95 S 260 60 410 40" stroke="#FBF6EC" stroke-opacity=".8" stroke-width="2.5" stroke-dasharray="10 10" fill="none" stroke-linecap="round"/><circle cx="42" cy="42" r="22" fill="#FBF6EC" opacity=".92"/><path transform="translate(30,30) scale(0.9)" d="M12 2 L13.2 9 L21 12 L13.2 13.5 L12 22 L10.8 13.5 L3 12 L10.8 9 Z" fill="#B83A14"/><text x="20" y="200" font-family="Georgia,serif" font-weight="700" font-size="17" letter-spacing="1" fill="#FBF6EC">AIRPORT → PUSHKAR</text></svg></span>
+          <span class="visual"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pushkar05.jpg?width=800" loading="lazy" alt="Pushkar town, the destination after landing at Kishangarh"></span>
           <span class="cbody"><h3>Kishangarh Airport to Pushkar</h3><p>Landing at Ajmer–Kishangarh? Here's how to get onward.</p><span class="readmore">Read the guide &rarr;</span></span>
         </a>
         <a class="gcard" href="directions-brahma-sarovar-pushkar.html">
-          <span class="visual"><svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" focusable="false">
-<defs><linearGradient id="g13" x1="0" y1="0" x2="0.3" y2="1">
-<stop offset="0" stop-color="#F4E8D0"/><stop offset="1" stop-color="#E8822A"/></linearGradient></defs>
-<rect width="400" height="220" fill="url(#g13)"/><circle cx="340" cy="46" r="26" fill="#FBF6EC" opacity=".9"/><path d="M0 150 Q70 110 150 140 T400 120 V220 H0 Z" fill="#FBF6EC" opacity=".16"/><path d="M0 185 Q90 150 220 178 T400 160 V220 H0 Z" fill="#FBF6EC" opacity=".26"/><path d="M-10 220 C120 150 90 120 170 95 S 260 60 410 40" stroke="#2B1A10" stroke-opacity=".28" stroke-width="34" fill="none" stroke-linecap="round"/><path d="M-10 220 C120 150 90 120 170 95 S 260 60 410 40" stroke="#FBF6EC" stroke-opacity=".8" stroke-width="2.5" stroke-dasharray="10 10" fill="none" stroke-linecap="round"/><circle cx="42" cy="42" r="22" fill="#FBF6EC" opacity=".92"/><path transform="translate(30,29) scale(1.0)" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 12.4 7 12.4s7-7.2 7-12.4a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" fill="#B83A14"/><text x="20" y="200" font-family="Georgia,serif" font-weight="700" font-size="17" letter-spacing="1" fill="#FBF6EC">TO OUR DOOR</text></svg></span>
+          <span class="visual"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ghats_at_Pushkar_lake%2C_Rajasthan.jpg?width=800" loading="lazy" alt="Ghats by Pushkar Lake, close to Choti Basti where we're located"></span>
           <span class="cbody"><h3>Directions to Brahma Sarovar</h3><p>Step-by-step directions to our homestay in Choti Basti.</p><span class="readmore">Read the guide &rarr;</span></span>
         </a>
       </div>
@@ -879,52 +863,31 @@ footer.site-footer li{margin:.3rem 0;font-size:.88rem}
       <p class="cat-intro">Sightseeing, the lake and ghats, the bazaar, and a camel safari into the dunes.</p>
       <div class="cat-grid">
         <a class="gcard" href="things-to-do-in-pushkar.html">
-          <span class="visual"><svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" focusable="false">
-<defs><linearGradient id="g14" x1="0" y1="0" x2="0.3" y2="1">
-<stop offset="0" stop-color="#F7B955"/><stop offset="1" stop-color="#B83A14"/></linearGradient></defs>
-<rect width="400" height="220" fill="url(#g14)"/><circle cx="330" cy="50" r="30" fill="#FBF6EC" opacity=".9"/><path d="M0 150 Q70 110 150 140 T400 120 V220 H0 Z" fill="#FBF6EC" opacity=".16"/><path d="M0 185 Q90 150 220 178 T400 160 V220 H0 Z" fill="#FBF6EC" opacity=".26"/><path d="M0 160 Q110 100 230 150 T400 130 V220 H0 Z" fill="#2B1A10" opacity=".22"/><g transform="translate(300,118) scale(1.6)" opacity=".5"><path d="M5 30V14a11 11 0 0 1 22 0v16z" fill="none" stroke="#FBF6EC" stroke-width="2.2"/><circle cx="16" cy="9" r="2.3" fill="#FBF6EC"/></g><g transform="translate(60,185) scale(1.5)"><path d="M0 0 c4.2 2.1 8.4 2.1 10.5 0 c2.1 -10.5 4.2 -16.8 8.4 -18.900000000000002 c2.1 -2.1 4.2 0 2.1 2.1 c-2.1 2.1 -2.1 4.2 0 6.300000000000001 c2.1 2.1 6.300000000000001 2.1 8.4 0 c4.2 -4.2 6.300000000000001 -14.700000000000001 12.600000000000001 -16.8 c4.2 -2.1 6.300000000000001 2.1 4.2 4.2 c-4.2 2.1 -4.2 6.300000000000001 -2.1 10.5 c2.1 4.2 2.1 8.4 0 12.600000000000001 l-2.1 6.300000000000001 l-4.2 0 l1.05 -6.300000000000001 l-6.300000000000001 0 l1.05 6.300000000000001 l-4.2 0 l-2.1 -8.4 c-6.300000000000001 2.1 -18.900000000000002 2.1 -25.200000000000003 -2.1 z" fill="#2B1A10" opacity=".88" transform="translate(0,0)"/></g><g transform="translate(150,195) scale(1.1)"><path d="M0 0 c4.2 2.1 8.4 2.1 10.5 0 c2.1 -10.5 4.2 -16.8 8.4 -18.900000000000002 c2.1 -2.1 4.2 0 2.1 2.1 c-2.1 2.1 -2.1 4.2 0 6.300000000000001 c2.1 2.1 6.300000000000001 2.1 8.4 0 c4.2 -4.2 6.300000000000001 -14.700000000000001 12.600000000000001 -16.8 c4.2 -2.1 6.300000000000001 2.1 4.2 4.2 c-4.2 2.1 -4.2 6.300000000000001 -2.1 10.5 c2.1 4.2 2.1 8.4 0 12.600000000000001 l-2.1 6.300000000000001 l-4.2 0 l1.05 -6.300000000000001 l-6.300000000000001 0 l1.05 6.300000000000001 l-4.2 0 l-2.1 -8.4 c-6.300000000000001 2.1 -18.900000000000002 2.1 -25.200000000000003 -2.1 z" fill="#2B1A10" opacity=".6" transform="translate(0,0)"/></g></svg></span>
+          <span class="visual"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pushkar_Gurdwara%2C_Sikh_temple%2C_Rajasthan.jpg?width=800" loading="lazy" alt="The Sikh Gurdwara, one of the varied sights in Pushkar"></span>
           <span class="cbody"><h3>Things to Do in Pushkar</h3><p>A roundup of temples, ghats, markets and experiences worth your time.</p><span class="readmore">Read the guide &rarr;</span></span>
         </a>
         <a class="gcard" href="places-to-visit-in-pushkar.html">
-          <span class="visual"><svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" focusable="false">
-<defs><linearGradient id="g15" x1="0" y1="0" x2="0.3" y2="1">
-<stop offset="0" stop-color="#D9B988"/><stop offset="1" stop-color="#5B2118"/></linearGradient></defs>
-<rect width="400" height="220" fill="url(#g15)"/><circle cx="335" cy="48" r="26" fill="#FBF6EC" opacity=".9"/><path d="M-20 128 Q40 118 100 128 T220 128 T340 128 T460 128" stroke="#FBF6EC" stroke-opacity="0.5" stroke-width="3" fill="none"/><path d="M-20 150 Q40 140 100 150 T220 150 T340 150 T460 150" stroke="#FBF6EC" stroke-opacity="0.42" stroke-width="3" fill="none"/><path d="M-20 172 Q40 162 100 172 T220 172 T340 172 T460 172" stroke="#FBF6EC" stroke-opacity="0.33999999999999997" stroke-width="3" fill="none"/><path d="M-20 194 Q40 184 100 194 T220 194 T340 194 T460 194" stroke="#FBF6EC" stroke-opacity="0.26" stroke-width="3" fill="none"/><path d="M0 198 l22 -14 l22 14 l22 -14 l22 14 l22 -14 l22 14 l22 -14 l22 14 l22 -14 l22 14 l22 -14 V220 H0 Z" fill="#2B1A10" opacity=".3"/></svg></span>
+          <span class="visual"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Panorama_of_Pushkar_Lake_in_Rajasthan.jpg?width=800" loading="lazy" alt="Panoramic view of Pushkar Lake and the surrounding town"></span>
           <span class="cbody"><h3>Places to Visit in Pushkar</h3><p>Key sights in and around town, from the lake to the surrounding dunes.</p><span class="readmore">Read the guide &rarr;</span></span>
         </a>
         <a class="gcard" href="pushkar-2-day-itinerary.html">
-          <span class="visual"><svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" focusable="false">
-<defs><linearGradient id="g16" x1="0" y1="0" x2="0.3" y2="1">
-<stop offset="0" stop-color="#F4E8D0"/><stop offset="1" stop-color="#E8822A"/></linearGradient></defs>
-<rect width="400" height="220" fill="url(#g16)"/><path d="M0 150 Q70 110 150 140 T400 120 V220 H0 Z" fill="#FBF6EC" opacity=".1"/><path d="M0 185 Q90 150 220 178 T400 160 V220 H0 Z" fill="#FBF6EC" opacity=".18"/><rect x="18.0" y="70" width="173.0" height="86" rx="10" fill="#FBF6EC" opacity=".9"/><rect x="18.0" y="70" width="173.0" height="22" rx="10" fill="#2B1A10" opacity=".25"/><text x="104.5" y="86" font-family="Georgia,serif" font-size="12" font-weight="700" fill="#FBF6EC" text-anchor="middle">DAY 1</text><circle cx="104.5" cy="118" r="16" fill="none" stroke="#B83A14" stroke-width="3" opacity=".55"/><rect x="209.0" y="70" width="173.0" height="86" rx="10" fill="#FBF6EC" opacity=".9"/><rect x="209.0" y="70" width="173.0" height="22" rx="10" fill="#2B1A10" opacity=".25"/><text x="295.5" y="86" font-family="Georgia,serif" font-size="12" font-weight="700" fill="#FBF6EC" text-anchor="middle">DAY 2</text><circle cx="295.5" cy="118" r="16" fill="none" stroke="#B83A14" stroke-width="3" opacity=".55"/><path d="M20 48 Q200 10 380 48" stroke="#FBF6EC" stroke-width="2.5" fill="none" stroke-dasharray="2 8" opacity=".8"/><circle cx="380" cy="48" r="14" fill="#FBF6EC" opacity=".9"/></svg></span>
+          <span class="visual"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pushkar_watering_hole.jpg?width=800" loading="lazy" alt="A quiet corner of Pushkar, part of a relaxed two-day visit"></span>
           <span class="cbody"><h3>Pushkar 2-Day Itinerary</h3><p>A practical two-day plan for seeing the highlights without rushing.</p><span class="readmore">Read the guide &rarr;</span></span>
         </a>
         <a class="gcard" href="pushkar-lake-guide.html">
-          <span class="visual"><svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" focusable="false">
-<defs><linearGradient id="g17" x1="0" y1="0" x2="0.3" y2="1">
-<stop offset="0" stop-color="#F7B955"/><stop offset="1" stop-color="#B83A14"/></linearGradient></defs>
-<rect width="400" height="220" fill="url(#g17)"/><circle cx="335" cy="48" r="26" fill="#FBF6EC" opacity=".9"/><path d="M-20 128 Q40 118 100 128 T220 128 T340 128 T460 128" stroke="#FBF6EC" stroke-opacity="0.5" stroke-width="3" fill="none"/><path d="M-20 150 Q40 140 100 150 T220 150 T340 150 T460 150" stroke="#FBF6EC" stroke-opacity="0.42" stroke-width="3" fill="none"/><path d="M-20 172 Q40 162 100 172 T220 172 T340 172 T460 172" stroke="#FBF6EC" stroke-opacity="0.33999999999999997" stroke-width="3" fill="none"/><path d="M-20 194 Q40 184 100 194 T220 194 T340 194 T460 194" stroke="#FBF6EC" stroke-opacity="0.26" stroke-width="3" fill="none"/><path d="M0 198 l22 -14 l22 14 l22 -14 l22 14 l22 -14 l22 14 l22 -14 l22 14 l22 -14 l22 14 l22 -14 V220 H0 Z" fill="#2B1A10" opacity=".3"/></svg></span>
+          <span class="visual"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Evening_lights_by_the_Pushkar_Lake%2C_Pushkar.jpg?width=800" loading="lazy" alt="Pushkar Lake lit up in the evening"></span>
           <span class="cbody"><h3>Pushkar Lake Guide</h3><p>What to know about the lake, its ghats and the customs around it.</p><span class="readmore">Read the guide &rarr;</span></span>
         </a>
         <a class="gcard" href="pushkar-ghats-guide.html">
-          <span class="visual"><svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" focusable="false">
-<defs><linearGradient id="g18" x1="0" y1="0" x2="0.3" y2="1">
-<stop offset="0" stop-color="#D9B988"/><stop offset="1" stop-color="#5B2118"/></linearGradient></defs>
-<rect width="400" height="220" fill="url(#g18)"/><circle cx="335" cy="46" r="24" fill="#FBF6EC" opacity=".9"/><path d="M-20 110 Q60 102 140 110 T400 110" stroke="#FBF6EC" stroke-opacity="0.45" stroke-width="3" fill="none"/><path d="M-20 132 Q60 124 140 132 T400 132" stroke="#FBF6EC" stroke-opacity="0.35" stroke-width="3" fill="none"/><path d="M-20 154 Q60 146 140 154 T400 154" stroke="#FBF6EC" stroke-opacity="0.25" stroke-width="3" fill="none"/><rect x="0.0" y="170" width="400" height="10" fill="#2B1A10" opacity="0.18"/><rect x="5.0" y="178" width="390" height="10" fill="#2B1A10" opacity="0.26"/><rect x="10.0" y="186" width="380" height="10" fill="#2B1A10" opacity="0.33999999999999997"/><rect x="15.0" y="194" width="370" height="10" fill="#2B1A10" opacity="0.42"/><rect x="20.0" y="202" width="360" height="10" fill="#2B1A10" opacity="0.5"/><rect x="25.0" y="210" width="350" height="10" fill="#2B1A10" opacity="0.5800000000000001"/><path d="M90 150 q4 -10 0 -16 q-4 6 0 16" fill="#F7B955" opacity=".9"/><path d="M200 150 q4 -10 0 -16 q-4 6 0 16" fill="#F7B955" opacity=".9"/><path d="M300 150 q4 -10 0 -16 q-4 6 0 16" fill="#F7B955" opacity=".9"/></svg></span>
+          <span class="visual"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bathing_Ghats_on_Pushkar_Lake%2C_Rajasthan.jpg?width=800" loading="lazy" alt="The bathing ghats along Pushkar Lake"></span>
           <span class="cbody"><h3>Pushkar Ghats Guide</h3><p>What the ghats are used for, and how to visit them respectfully.</p><span class="readmore">Read the guide &rarr;</span></span>
         </a>
         <a class="gcard" href="pushkar-market-guide.html">
-          <span class="visual"><svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" focusable="false">
-<defs><linearGradient id="g19" x1="0" y1="0" x2="0.3" y2="1">
-<stop offset="0" stop-color="#F4E8D0"/><stop offset="1" stop-color="#E8822A"/></linearGradient></defs>
-<rect width="400" height="220" fill="url(#g19)"/><path d="M0 20 Q200 4 400 20" stroke="#FBF6EC" stroke-width="2" fill="none" opacity=".7"/><path d="M10 20 L32 20 L21 42 Z" fill="#FBF6EC" opacity=".55"/><path d="M50 20 L72 20 L61 42 Z" fill="#FBF6EC" opacity=".85"/><path d="M90 20 L112 20 L101 42 Z" fill="#FBF6EC" opacity=".55"/><path d="M130 20 L152 20 L141 42 Z" fill="#FBF6EC" opacity=".85"/><path d="M170 20 L192 20 L181 42 Z" fill="#FBF6EC" opacity=".55"/><path d="M210 20 L232 20 L221 42 Z" fill="#FBF6EC" opacity=".85"/><path d="M250 20 L272 20 L261 42 Z" fill="#FBF6EC" opacity=".55"/><path d="M290 20 L312 20 L301 42 Z" fill="#FBF6EC" opacity=".85"/><path d="M330 20 L352 20 L341 42 Z" fill="#FBF6EC" opacity=".55"/><path d="M370 20 L392 20 L381 42 Z" fill="#FBF6EC" opacity=".85"/><path d="M40 150 L40 110 Q75 95 110 110 L110 150 Z" fill="#2B1A10" opacity="0.22"/><rect x="34" y="150" width="82" height="50" fill="#2B1A10" opacity="0.16"/><path d="M150 150 L150 110 Q185 95 220 110 L220 150 Z" fill="#2B1A10" opacity="0.27"/><rect x="144" y="150" width="82" height="50" fill="#2B1A10" opacity="0.21000000000000002"/><path d="M260 150 L260 110 Q295 95 330 110 L330 150 Z" fill="#2B1A10" opacity="0.32"/><rect x="254" y="150" width="82" height="50" fill="#2B1A10" opacity="0.26"/></svg></span>
+          <span class="visual"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Holi_celebrations%2C_Pushkar%2C_Rajasthan.jpg?width=800" loading="lazy" alt="A lively, colourful scene in central Pushkar"></span>
           <span class="cbody"><h3>Pushkar Market Guide</h3><p>Where to shop in the bazaar, and what it's known for.</p><span class="readmore">Read the guide &rarr;</span></span>
         </a>
         <a class="gcard" href="camel-safari-sunset-dunes-pushkar.html">
-          <span class="visual"><svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" focusable="false">
-<defs><linearGradient id="g20" x1="0" y1="0" x2="0.3" y2="1">
-<stop offset="0" stop-color="#D9B988"/><stop offset="1" stop-color="#5B2118"/></linearGradient></defs>
-<rect width="400" height="220" fill="url(#g20)"/><circle cx="330" cy="50" r="30" fill="#FBF6EC" opacity=".9"/><path d="M0 150 Q70 110 150 140 T400 120 V220 H0 Z" fill="#FBF6EC" opacity=".16"/><path d="M0 185 Q90 150 220 178 T400 160 V220 H0 Z" fill="#FBF6EC" opacity=".26"/><path d="M0 160 Q110 100 230 150 T400 130 V220 H0 Z" fill="#2B1A10" opacity=".22"/><g transform="translate(60,185) scale(1.5)"><path d="M0 0 c4.2 2.1 8.4 2.1 10.5 0 c2.1 -10.5 4.2 -16.8 8.4 -18.900000000000002 c2.1 -2.1 4.2 0 2.1 2.1 c-2.1 2.1 -2.1 4.2 0 6.300000000000001 c2.1 2.1 6.300000000000001 2.1 8.4 0 c4.2 -4.2 6.300000000000001 -14.700000000000001 12.600000000000001 -16.8 c4.2 -2.1 6.300000000000001 2.1 4.2 4.2 c-4.2 2.1 -4.2 6.300000000000001 -2.1 10.5 c2.1 4.2 2.1 8.4 0 12.600000000000001 l-2.1 6.300000000000001 l-4.2 0 l1.05 -6.300000000000001 l-6.300000000000001 0 l1.05 6.300000000000001 l-4.2 0 l-2.1 -8.4 c-6.300000000000001 2.1 -18.900000000000002 2.1 -25.200000000000003 -2.1 z" fill="#2B1A10" opacity=".88" transform="translate(0,0)"/></g><g transform="translate(150,195) scale(1.1)"><path d="M0 0 c4.2 2.1 8.4 2.1 10.5 0 c2.1 -10.5 4.2 -16.8 8.4 -18.900000000000002 c2.1 -2.1 4.2 0 2.1 2.1 c-2.1 2.1 -2.1 4.2 0 6.300000000000001 c2.1 2.1 6.300000000000001 2.1 8.4 0 c4.2 -4.2 6.300000000000001 -14.700000000000001 12.600000000000001 -16.8 c4.2 -2.1 6.300000000000001 2.1 4.2 4.2 c-4.2 2.1 -4.2 6.300000000000001 -2.1 10.5 c2.1 4.2 2.1 8.4 0 12.600000000000001 l-2.1 6.300000000000001 l-4.2 0 l1.05 -6.300000000000001 l-6.300000000000001 0 l1.05 6.300000000000001 l-4.2 0 l-2.1 -8.4 c-6.300000000000001 2.1 -18.900000000000002 2.1 -25.200000000000003 -2.1 z" fill="#2B1A10" opacity=".6" transform="translate(0,0)"/></g></svg></span>
+          <span class="visual"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/%28A%29_Camel_Pushkar_fair.jpg?width=800" loading="lazy" alt="Camels in the dunes outside Pushkar"></span>
           <span class="cbody"><h3>Camel Safari &amp; Sunset Dunes</h3><p>What to know before booking a camel safari outside Pushkar.</p><span class="readmore">Read the guide &rarr;</span></span>
         </a>
       </div>
@@ -936,24 +899,15 @@ footer.site-footer li{margin:.3rem 0;font-size:.88rem}
       <p class="cat-intro">Pushkar's temples beyond the Brahma Temple, each with its own history and etiquette.</p>
       <div class="cat-grid">
         <a class="gcard" href="varaha-temple-pushkar.html">
-          <span class="visual"><svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" focusable="false">
-<defs><linearGradient id="g21" x1="0" y1="0" x2="0.3" y2="1">
-<stop offset="0" stop-color="#F7B955"/><stop offset="1" stop-color="#B83A14"/></linearGradient></defs>
-<rect width="400" height="220" fill="url(#g21)"/><circle cx="335" cy="44" r="22" fill="#FBF6EC" opacity=".9"/><path d="M0 150 Q70 110 150 140 T400 120 V220 H0 Z" fill="#FBF6EC" opacity=".12"/><path d="M0 185 Q90 150 220 178 T400 160 V220 H0 Z" fill="#FBF6EC" opacity=".2"/><path d="M0 198 H400 V220 H0 Z" fill="#2B1A10" opacity=".25"/><path d="M164 198 V140 a36 36 0 0 1 72 0 v58 z" fill="#FBF6EC" opacity=".88"/><circle cx="200" cy="124" r="7.5" fill="#FBF6EC" opacity=".88"/><rect x="196" y="110" width="8" height="16" fill="#FBF6EC" opacity=".88"/></svg></span>
+          <span class="visual"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Brahma_Temple%2C_Pushkar.jpg?width=800" loading="lazy" alt="A Pushkar temple near the old town"></span>
           <span class="cbody"><h3>Varaha Temple, Pushkar</h3><p>A temple dedicated to Varaha, an avatar of Vishnu, near the old town.</p><span class="readmore">Read the guide &rarr;</span></span>
         </a>
         <a class="gcard" href="rangji-temple-pushkar.html">
-          <span class="visual"><svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" focusable="false">
-<defs><linearGradient id="g22" x1="0" y1="0" x2="0.3" y2="1">
-<stop offset="0" stop-color="#D9B988"/><stop offset="1" stop-color="#5B2118"/></linearGradient></defs>
-<rect width="400" height="220" fill="url(#g22)"/><circle cx="335" cy="44" r="22" fill="#FBF6EC" opacity=".9"/><path d="M0 150 Q70 110 150 140 T400 120 V220 H0 Z" fill="#FBF6EC" opacity=".12"/><path d="M0 185 Q90 150 220 178 T400 160 V220 H0 Z" fill="#FBF6EC" opacity=".2"/><path d="M0 198 H400 V220 H0 Z" fill="#2B1A10" opacity=".25"/><rect x="125.0" y="172" width="150" height="26" fill="#FBF6EC" opacity="0.5"/><rect x="136.0" y="146" width="128" height="26" fill="#FBF6EC" opacity="0.59"/><rect x="147.0" y="120" width="106" height="26" fill="#FBF6EC" opacity="0.6799999999999999"/><rect x="158.0" y="94" width="84" height="26" fill="#FBF6EC" opacity="0.77"/><rect x="169.0" y="68" width="62" height="26" fill="#FBF6EC" opacity="0.86"/><path d="M186 50 L200 32 L214 50 Z" fill="#FBF6EC" opacity=".92"/></svg></span>
+          <span class="visual"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Templo_a_Brahm%C4%81_en_Pushkar%2C_Rajasthan.jpg?width=800" loading="lazy" alt="A temple in Pushkar's old town, near Rangji Temple"></span>
           <span class="cbody"><h3>Rangji Temple, Pushkar</h3><p>Notable for its South Indian–style architecture, unusual in Rajasthan.</p><span class="readmore">Read the guide &rarr;</span></span>
         </a>
         <a class="gcard" href="savitri-temple-pushkar.html">
-          <span class="visual"><svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" focusable="false">
-<defs><linearGradient id="g23" x1="0" y1="0" x2="0.3" y2="1">
-<stop offset="0" stop-color="#F4E8D0"/><stop offset="1" stop-color="#E8822A"/></linearGradient></defs>
-<rect width="400" height="220" fill="url(#g23)"/><circle cx="335" cy="44" r="22" fill="#FBF6EC" opacity=".9"/><path d="M0 150 Q70 110 150 140 T400 120 V220 H0 Z" fill="#FBF6EC" opacity=".12"/><path d="M0 185 Q90 150 220 178 T400 160 V220 H0 Z" fill="#FBF6EC" opacity=".2"/><path d="M0 190 Q200 90 400 190 V220 H0 Z" fill="#2B1A10" opacity=".3"/><path d="M166 160 V110 a34 34 0 0 1 68 0 v50 z" fill="#FBF6EC" opacity=".88"/><circle cx="200" cy="95" r="7" fill="#FBF6EC" opacity=".88"/><path d="M80 150 Q140 115 160 128" stroke="#FBF6EC" stroke-width="2" fill="none" stroke-dasharray="3 7" opacity=".7"/><rect x="75" y="146" width="10" height="7" fill="#FBF6EC" opacity=".8"/></svg></span>
+          <span class="visual"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Hill_top_temple%2C_overlooking_Pushkar_lake%2C_Rajasthan.jpg?width=800" loading="lazy" alt="Savitri Temple on the hilltop overlooking Pushkar Lake"></span>
           <span class="cbody"><h3>Savitri Temple, Pushkar</h3><p>A hilltop temple overlooking Pushkar, reached by cable car or a climb.</p><span class="readmore">Read the guide &rarr;</span></span>
         </a>
       </div>
@@ -965,24 +919,15 @@ footer.site-footer li{margin:.3rem 0;font-size:.88rem}
       <p class="cat-intro">When the fair happens, what Kartik Purnima means, and the best season to time your trip.</p>
       <div class="cat-grid">
         <a class="gcard" href="pushkar-fair-guide.html">
-          <span class="visual"><svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" focusable="false">
-<defs><linearGradient id="g24" x1="0" y1="0" x2="0.3" y2="1">
-<stop offset="0" stop-color="#F4E8D0"/><stop offset="1" stop-color="#E8822A"/></linearGradient></defs>
-<rect width="400" height="220" fill="url(#g24)"/><circle cx="330" cy="50" r="30" fill="#FBF6EC" opacity=".9"/><path d="M0 150 Q70 110 150 140 T400 120 V220 H0 Z" fill="#FBF6EC" opacity=".16"/><path d="M0 185 Q90 150 220 178 T400 160 V220 H0 Z" fill="#FBF6EC" opacity=".26"/><path d="M0 160 Q110 100 230 150 T400 130 V220 H0 Z" fill="#2B1A10" opacity=".22"/><g transform="translate(60,185) scale(1.5)"><path d="M0 0 c4.2 2.1 8.4 2.1 10.5 0 c2.1 -10.5 4.2 -16.8 8.4 -18.900000000000002 c2.1 -2.1 4.2 0 2.1 2.1 c-2.1 2.1 -2.1 4.2 0 6.300000000000001 c2.1 2.1 6.300000000000001 2.1 8.4 0 c4.2 -4.2 6.300000000000001 -14.700000000000001 12.600000000000001 -16.8 c4.2 -2.1 6.300000000000001 2.1 4.2 4.2 c-4.2 2.1 -4.2 6.300000000000001 -2.1 10.5 c2.1 4.2 2.1 8.4 0 12.600000000000001 l-2.1 6.300000000000001 l-4.2 0 l1.05 -6.300000000000001 l-6.300000000000001 0 l1.05 6.300000000000001 l-4.2 0 l-2.1 -8.4 c-6.300000000000001 2.1 -18.900000000000002 2.1 -25.200000000000003 -2.1 z" fill="#2B1A10" opacity=".88" transform="translate(0,0)"/></g><g transform="translate(150,195) scale(1.1)"><path d="M0 0 c4.2 2.1 8.4 2.1 10.5 0 c2.1 -10.5 4.2 -16.8 8.4 -18.900000000000002 c2.1 -2.1 4.2 0 2.1 2.1 c-2.1 2.1 -2.1 4.2 0 6.300000000000001 c2.1 2.1 6.300000000000001 2.1 8.4 0 c4.2 -4.2 6.300000000000001 -14.700000000000001 12.600000000000001 -16.8 c4.2 -2.1 6.300000000000001 2.1 4.2 4.2 c-4.2 2.1 -4.2 6.300000000000001 -2.1 10.5 c2.1 4.2 2.1 8.4 0 12.600000000000001 l-2.1 6.300000000000001 l-4.2 0 l1.05 -6.300000000000001 l-6.300000000000001 0 l1.05 6.300000000000001 l-4.2 0 l-2.1 -8.4 c-6.300000000000001 2.1 -18.900000000000002 2.1 -25.200000000000003 -2.1 z" fill="#2B1A10" opacity=".6" transform="translate(0,0)"/></g><path d="M10 18 Q200 2 390 18" stroke="#FBF6EC" stroke-width="2" fill="none" opacity=".7"/><path d="M20 18 L41 18 L30.5 40 Z" fill="#FBF6EC" opacity=".6"/><path d="M62 18 L83 18 L72.5 40 Z" fill="#FBF6EC" opacity=".85"/><path d="M104 18 L125 18 L114.5 40 Z" fill="#FBF6EC" opacity=".6"/><path d="M146 18 L167 18 L156.5 40 Z" fill="#FBF6EC" opacity=".85"/><path d="M188 18 L209 18 L198.5 40 Z" fill="#FBF6EC" opacity=".6"/><path d="M230 18 L251 18 L240.5 40 Z" fill="#FBF6EC" opacity=".85"/><path d="M272 18 L293 18 L282.5 40 Z" fill="#FBF6EC" opacity=".6"/><path d="M314 18 L335 18 L324.5 40 Z" fill="#FBF6EC" opacity=".85"/><path d="M356 18 L377 18 L366.5 40 Z" fill="#FBF6EC" opacity=".6"/></svg></span>
+          <span class="visual"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Giant_wheels_at_Pushkar%2C_Rajasthan.jpg?width=800" loading="lazy" alt="Fairground wheels at the Pushkar Fair"></span>
           <span class="cbody"><h3>Pushkar Fair Guide</h3><p>What the fair is, what happens there, and how to plan around it.</p><span class="readmore">Read the guide &rarr;</span></span>
         </a>
         <a class="gcard" href="kartik-purnima-pushkar-snan.html">
-          <span class="visual"><svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" focusable="false">
-<defs><linearGradient id="g25" x1="0" y1="0" x2="0.3" y2="1">
-<stop offset="0" stop-color="#F4E8D0"/><stop offset="1" stop-color="#E8822A"/></linearGradient><radialGradient id="g_moonshadow"><stop offset="0" stop-color="#5B2118" stop-opacity=".55"/><stop offset="1" stop-color="#5B2118" stop-opacity="0"/></radialGradient></defs>
-<rect width="400" height="220" fill="url(#g25)"/><circle cx="335" cy="48" r="24" fill="#FBF6EC" opacity=".92"/><circle cx="345.08" cy="42.0" r="20.16" fill="url(#g_moonshadow)" /><circle cx="70" cy="40" r="2.3" fill="#F7B955" opacity=".8"/><circle cx="134" cy="54" r="2.3" fill="#F7B955" opacity=".8"/><circle cx="178" cy="68" r="2.3" fill="#F7B955" opacity=".8"/><circle cx="242" cy="40" r="2.3" fill="#F7B955" opacity=".8"/><circle cx="286" cy="54" r="2.3" fill="#F7B955" opacity=".8"/><circle cx="350" cy="68" r="2.3" fill="#F7B955" opacity=".8"/><path d="M-20 128 Q40 118 100 128 T220 128 T340 128 T460 128" stroke="#FBF6EC" stroke-opacity="0.5" stroke-width="3" fill="none"/><path d="M-20 150 Q40 140 100 150 T220 150 T340 150 T460 150" stroke="#FBF6EC" stroke-opacity="0.42" stroke-width="3" fill="none"/><path d="M-20 172 Q40 162 100 172 T220 172 T340 172 T460 172" stroke="#FBF6EC" stroke-opacity="0.33999999999999997" stroke-width="3" fill="none"/><path d="M-20 194 Q40 184 100 194 T220 194 T340 194 T460 194" stroke="#FBF6EC" stroke-opacity="0.26" stroke-width="3" fill="none"/><path d="M0 198 l22 -14 l22 14 l22 -14 l22 14 l22 -14 l22 14 l22 -14 l22 14 l22 -14 l22 14 l22 -14 V220 H0 Z" fill="#2B1A10" opacity=".3"/></svg></span>
+          <span class="visual"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/%282%29_Faces_and_colours_at_Pushkar_Fair.jpg?width=800" loading="lazy" alt="Faces and colours of the Pushkar Fair around Kartik Purnima"></span>
           <span class="cbody"><h3>Kartik Purnima &amp; Pushkar Snan</h3><p>The significance of Kartik Purnima and the ritual bath at the lake.</p><span class="readmore">Read the guide &rarr;</span></span>
         </a>
         <a class="gcard" href="best-time-to-visit-pushkar.html">
-          <span class="visual"><svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" focusable="false">
-<defs><linearGradient id="g26" x1="0" y1="0" x2="0.3" y2="1">
-<stop offset="0" stop-color="#F7B955"/><stop offset="1" stop-color="#B83A14"/></linearGradient></defs>
-<rect width="400" height="220" fill="url(#g26)"/><path d="M0 150 Q70 110 150 140 T400 120 V220 H0 Z" fill="#FBF6EC" opacity=".1"/><path d="M0 185 Q90 150 220 178 T400 160 V220 H0 Z" fill="#FBF6EC" opacity=".18"/><rect x="18.0" y="70" width="77.5" height="86" rx="10" fill="#FBF6EC" opacity=".9"/><rect x="18.0" y="70" width="77.5" height="22" rx="10" fill="#2B1A10" opacity=".25"/><text x="56.75" y="86" font-family="Georgia,serif" font-size="12" font-weight="700" fill="#FBF6EC" text-anchor="middle">DAY 1</text><circle cx="56.75" cy="118" r="16" fill="none" stroke="#B83A14" stroke-width="3" opacity=".55"/><rect x="113.5" y="70" width="77.5" height="86" rx="10" fill="#FBF6EC" opacity=".9"/><rect x="113.5" y="70" width="77.5" height="22" rx="10" fill="#2B1A10" opacity=".25"/><text x="152.25" y="86" font-family="Georgia,serif" font-size="12" font-weight="700" fill="#FBF6EC" text-anchor="middle">DAY 2</text><circle cx="152.25" cy="118" r="16" fill="none" stroke="#B83A14" stroke-width="3" opacity=".55"/><rect x="209.0" y="70" width="77.5" height="86" rx="10" fill="#FBF6EC" opacity=".9"/><rect x="209.0" y="70" width="77.5" height="22" rx="10" fill="#2B1A10" opacity=".25"/><text x="247.75" y="86" font-family="Georgia,serif" font-size="12" font-weight="700" fill="#FBF6EC" text-anchor="middle">DAY 3</text><circle cx="247.75" cy="118" r="16" fill="none" stroke="#B83A14" stroke-width="3" opacity=".55"/><rect x="304.5" y="70" width="77.5" height="86" rx="10" fill="#FBF6EC" opacity=".9"/><rect x="304.5" y="70" width="77.5" height="22" rx="10" fill="#2B1A10" opacity=".25"/><text x="343.25" y="86" font-family="Georgia,serif" font-size="12" font-weight="700" fill="#FBF6EC" text-anchor="middle">DAY 4</text><circle cx="343.25" cy="118" r="16" fill="none" stroke="#B83A14" stroke-width="3" opacity=".55"/><path d="M20 48 Q200 10 380 48" stroke="#FBF6EC" stroke-width="2.5" fill="none" stroke-dasharray="2 8" opacity=".8"/><circle cx="380" cy="48" r="14" fill="#FBF6EC" opacity=".9"/></svg></span>
+          <span class="visual"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tug_of_war%2C_at_Pushkar_Fair%2C_Rajasthan.jpg?width=800" loading="lazy" alt="Fair-season activities, one of the best times to visit Pushkar"></span>
           <span class="cbody"><h3>Best Time to Visit Pushkar</h3><p>A season-by-season look at when to visit, fair season included.</p><span class="readmore">Read the guide &rarr;</span></span>
         </a>
       </div>
@@ -994,24 +939,15 @@ footer.site-footer li{margin:.3rem 0;font-size:.88rem}
       <p class="cat-intro">First-visit basics, local etiquette and safety, and a day trip to Ajmer Sharif.</p>
       <div class="cat-grid">
         <a class="gcard" href="pushkar-travel-guide-first-time-visitors.html">
-          <span class="visual"><svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" focusable="false">
-<defs><linearGradient id="g27" x1="0" y1="0" x2="0.3" y2="1">
-<stop offset="0" stop-color="#F7B955"/><stop offset="1" stop-color="#B83A14"/></linearGradient></defs>
-<rect width="400" height="220" fill="url(#g27)"/><path d="M0 150 Q70 110 150 140 T400 120 V220 H0 Z" fill="#FBF6EC" opacity=".12"/><path d="M0 185 Q90 150 220 178 T400 160 V220 H0 Z" fill="#FBF6EC" opacity=".2"/><circle cx="200" cy="112" r="62" fill="none" stroke="#FBF6EC" stroke-width="3" opacity=".85"/><circle cx="200" cy="112" r="48" fill="none" stroke="#FBF6EC" stroke-width="1.4" opacity=".5"/><line x1="260.0" y1="112.0" x2="270.0" y2="112.0" stroke="#FBF6EC" stroke-width="2" opacity=".5"/><line x1="252.0" y1="142.0" x2="260.6" y2="147.0" stroke="#FBF6EC" stroke-width="2" opacity=".5"/><line x1="230.0" y1="164.0" x2="235.0" y2="172.6" stroke="#FBF6EC" stroke-width="2" opacity=".5"/><line x1="200.0" y1="172.0" x2="200.0" y2="182.0" stroke="#FBF6EC" stroke-width="2" opacity=".5"/><line x1="170.0" y1="164.0" x2="165.0" y2="172.6" stroke="#FBF6EC" stroke-width="2" opacity=".5"/><line x1="148.0" y1="142.0" x2="139.4" y2="147.0" stroke="#FBF6EC" stroke-width="2" opacity=".5"/><line x1="140.0" y1="112.0" x2="130.0" y2="112.0" stroke="#FBF6EC" stroke-width="2" opacity=".5"/><line x1="148.0" y1="82.0" x2="139.4" y2="77.0" stroke="#FBF6EC" stroke-width="2" opacity=".5"/><line x1="170.0" y1="60.0" x2="165.0" y2="51.4" stroke="#FBF6EC" stroke-width="2" opacity=".5"/><line x1="200.0" y1="52.0" x2="200.0" y2="42.0" stroke="#FBF6EC" stroke-width="2" opacity=".5"/><line x1="230.0" y1="60.0" x2="235.0" y2="51.4" stroke="#FBF6EC" stroke-width="2" opacity=".5"/><line x1="252.0" y1="82.0" x2="260.6" y2="77.0" stroke="#FBF6EC" stroke-width="2" opacity=".5"/><path d="M200 68 L211 112 L200 156 L189 112 Z" fill="#B83A14"/><circle cx="200" cy="112" r="5" fill="#FBF6EC"/></svg></span>
+          <span class="visual"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pushkar.jpg?width=800" loading="lazy" alt="Pushkar town, a good overview for first-time visitors"></span>
           <span class="cbody"><h3>Guide for First-Time Visitors</h3><p>Everything a first-time visitor to Pushkar should know before arriving.</p><span class="readmore">Read the guide &rarr;</span></span>
         </a>
         <a class="gcard" href="pushkar-etiquette-safety.html">
-          <span class="visual"><svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" focusable="false">
-<defs><linearGradient id="g28" x1="0" y1="0" x2="0.3" y2="1">
-<stop offset="0" stop-color="#D9B988"/><stop offset="1" stop-color="#5B2118"/></linearGradient></defs>
-<rect width="400" height="220" fill="url(#g28)"/><circle cx="335" cy="44" r="22" fill="#FBF6EC" opacity=".9"/><path d="M0 150 Q70 110 150 140 T400 120 V220 H0 Z" fill="#FBF6EC" opacity=".12"/><path d="M0 185 Q90 150 220 178 T400 160 V220 H0 Z" fill="#FBF6EC" opacity=".2"/><path d="M0 198 H400 V220 H0 Z" fill="#2B1A10" opacity=".25"/><path d="M164 198 V140 a36 36 0 0 1 72 0 v58 z" fill="#FBF6EC" opacity=".88"/><circle cx="200" cy="124" r="7.5" fill="#FBF6EC" opacity=".88"/><rect x="196" y="110" width="8" height="16" fill="#FBF6EC" opacity=".88"/><g transform="translate(316,24)"><path d="M12 2l7 3v6c0 5-3 8.3-7 9.6C8 19.3 5 16 5 11V5z" fill="#FBF6EC" opacity=".92"/><path d="M8.6 12.3l2.2 2.2 4.4-4.4" fill="none" stroke-width="1.8" stroke="#5B2118"/></g></svg></span>
+          <span class="visual"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bathing_Ghats_on_Pushkar_Lake%2C_Rajasthan.jpg?width=800" loading="lazy" alt="The ghats, where visitor etiquette matters most"></span>
           <span class="cbody"><h3>Pushkar Etiquette &amp; Safety</h3><p>Local customs, temple etiquette and practical safety tips.</p><span class="readmore">Read the guide &rarr;</span></span>
         </a>
         <a class="gcard" href="ajmer-sharif-day-trip-from-pushkar.html">
-          <span class="visual"><svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" focusable="false">
-<defs><linearGradient id="g29" x1="0" y1="0" x2="0.3" y2="1">
-<stop offset="0" stop-color="#F4E8D0"/><stop offset="1" stop-color="#E8822A"/></linearGradient></defs>
-<rect width="400" height="220" fill="url(#g29)"/><circle cx="335" cy="44" r="22" fill="#FBF6EC" opacity=".9"/><path d="M0 150 Q70 110 150 140 T400 120 V220 H0 Z" fill="#FBF6EC" opacity=".12"/><path d="M0 185 Q90 150 220 178 T400 160 V220 H0 Z" fill="#FBF6EC" opacity=".2"/><path d="M0 198 H400 V220 H0 Z" fill="#2B1A10" opacity=".25"/><path d="M162 198 V130 a38 38 0 0 1 76 0 v68 z" fill="#FBF6EC" opacity=".88"/><circle cx="200" cy="112" r="8" fill="#FBF6EC" opacity=".88"/><rect x="104" y="140" width="12" height="58" fill="#FBF6EC" opacity=".8"/><path d="M102 140 a8 10 0 0 1 16 0 z" fill="#FBF6EC" opacity=".8"/><rect x="284" y="140" width="12" height="58" fill="#FBF6EC" opacity=".8"/><path d="M282 140 a8 10 0 0 1 16 0 z" fill="#FBF6EC" opacity=".8"/></svg></span>
+          <span class="visual"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ajmer_Sharif_Dargah%2C_Khwaja_Garib_Nawaz_Rajasthan%2C_India.jpg?width=800" loading="lazy" alt="Ajmer Sharif Dargah, a popular day trip from Pushkar"></span>
           <span class="cbody"><h3>Ajmer Sharif Day Trip</h3><p>Planning a day trip to the Ajmer Sharif Dargah from Pushkar.</p><span class="readmore">Read the guide &rarr;</span></span>
         </a>
       </div>
@@ -1229,5 +1165,31 @@ footer.site-footer li{margin:.3rem 0;font-size:.88rem}
   </div>
   <div class="wrap legal">&copy; 2026 Brahma Sarovar Home Stay and Cafe. Designed by DDS Agency.</div>
 </footer>
+<script>
+(function(){
+  var imgs = document.querySelectorAll('img');
+  var failed = [];
+  imgs.forEach(function(img){
+    img.setAttribute('decoding','async');
+    img.addEventListener('error', function(){
+      failed.push(img.src);
+      console.warn('[image failed] ' + img.src);
+      var holder = img.closest('.ph, .visual');
+      if (holder) holder.classList.add('img-broken');
+      img.style.display = 'none';
+    }, {once:true});
+  });
+  window.addEventListener('load', function(){
+    setTimeout(function(){
+      if (failed.length){
+        console.warn('Total images that failed to load: ' + failed.length + ' of ' + imgs.length);
+        console.warn('Failed URLs:', failed);
+      } else {
+        console.info('All ' + imgs.length + ' images loaded fine.');
+      }
+    }, 1500);
+  });
+})();
+</script>
 </body>
 </html>
